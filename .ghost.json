@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "https://elysestyled.com",
+    "contentApiKey": "71c5d562b35ddd556d246643e7"
   },
   "production": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "https://elysestyled.com",
+    "contentApiKey": "71c5d562b35ddd556d246643e7"
   }
 }
