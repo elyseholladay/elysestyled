@@ -21,17 +21,10 @@ what's here to work the way you'd like it to.
 /* FONT-FACE DEFINITIONS --------------------------------------------------- */
 /* ------------------------------------------------------------------------- */
 
-@font-face {
-    font-family: 'Tiempos Headline';
-    src: url('../fonts/tiempos/TiemposHeadlineWeb-Bold.woff2') format('woff2'),
-    url('../fonts/tiempos/TiemposHeadlineWeb-Bold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: 'Tiempos Headline';
-    src: url('../fonts/tiempos/TiemposHeadlineWeb-BoldItalic.woff2') format('woff2'), url('../fonts/tiempos/TiemposHeadlineWeb-BoldItalic.woff') format('woff');
+    font-family: 'Tiempos Text';
+    src: url('../fonts/tiempos/TiemposTextTest-BoldItalic.woff') format('woff');
     font-weight: 800;
     font-style: italic;
 }
@@ -50,6 +43,12 @@ what's here to work the way you'd like it to.
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Calibre';
+    src: url('../fonts/calibre/CalibreTest-Semibold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 
 /* Variables
@@ -58,20 +57,19 @@ what's here to work the way you'd like it to.
 :root {
 
     /* Colours */
-    --color-primary: #EBA832;
+    --color-primary: #f1a217; // in XD: #EBA832;
     --color-base: #233135;
     --color-secondary: #A5BDC5;
     --color-border: #8A807C;
     --color-bg: #f2f2f2;
 
     /* Fonts */
-    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: Georgia, Times, serif;
+    --font-sans-serif: "Calibre", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: "Tiempos Text", Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
-    --font-light: 100;
+    --font-light: 200;
     --font-normal: 400;
-    --font-bold: 700;
-    --font-heavy: 800;
+    --font-bold: 800;
 
     /* Sizes */
     --height: 4rem;
@@ -346,7 +344,7 @@ html {
 body {
     overflow-x: hidden;
     color: #3c484e;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: var(--font-serif);
     font-size: 1.5rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -354,9 +352,6 @@ body {
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
     background: #fff;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga" on;
 }
 
@@ -496,7 +491,7 @@ h6 {
     margin-top: 0;
     color: var(--color-base);
     line-height: 1.15;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     text-rendering: optimizeLegibility;
 }
 
@@ -561,7 +556,7 @@ h6 {
 }
 
 .container {
-    max-width: 1120px;
+    max-width: 1010px;
     margin: 0 auto;
     padding: 0 4vw;
 }
@@ -597,7 +592,7 @@ h6 {
 .content-body h4,
 .content-body h5,
 .content-body h6 {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-serif);
 }
 
 .content-body h1 {
@@ -698,10 +693,9 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-head {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 2rem 0 3rem;
     color: #fff;
-    background: var(--color-base);
+    background: var(--color-primary);
     background-position: center;
     background-size: cover;
 }
@@ -710,7 +704,10 @@ h6 {
     display: inline-block;
     padding: 5px 10px;
     color: #fff;
+    text-transform: uppercase;
     opacity: 0.7;
+    font-family: var(--font-sans-serif);
+    transition: .5s opacity ease-in-out;
 }
 
 .site-nav-item:hover {
@@ -733,6 +730,26 @@ h6 {
     justify-content: space-between;
 }
 
+.site-mast-left a:hover {
+    text-decoration: none;
+}
+
+.site-mast-title {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 5rem;
+    line-height: 1.3em;
+    font-style: italic;
+    opacity: 0.7;
+    transition: .5s opacity ease-in-out;
+}
+
+.site-mast-title:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
 .site-mast-right {
     display: flex;
     align-items: center;
@@ -740,29 +757,6 @@ h6 {
 
 .site-mast-right .site-nav-item:last-child {
     padding-right: 0;
-}
-
-.site-banner {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 10vw 0;
-    text-align: center;
-}
-
-.site-banner-title {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-size: 4rem;
-    line-height: 1.3em;
-}
-
-.site-banner-desc {
-    margin: 5px 0 0 0;
-    padding: 0;
-    font-size: 2.4rem;
-    line-height: 1.3em;
-    opacity: 0.7;
 }
 
 .site-nav {
@@ -789,6 +783,19 @@ h6 {
 
 .site-nav-button:hover {
     text-decoration: none;
+}
+
+/* Coaching Page Banner
+/* ---------------------------------------------------------- */
+.page-coaching-banner {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 6rem 0 2rem 0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--font-bold);
+    font-size: 2.6rem;
+    line-height: 1.4;
 }
 
 /* Main
