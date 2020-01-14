@@ -57,7 +57,7 @@ what's here to work the way you'd like it to.
 :root {
 
     /* Colours */
-    --color-primary: #f1a217; // in XD: #EBA832;
+    --color-primary: #f1a217; /* in XD: #EBA832; */
     --color-base: #233135;
     --color-secondary: #A5BDC5;
     --color-border: #8A807C;
