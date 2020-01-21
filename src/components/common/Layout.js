@@ -71,6 +71,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         </div>
                     </header>
 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.001 226.783">
+                        <path data-name="site-head-curve-svg" className="site-head-curve" d="M0 194.669V-.005h1920v3.538C1454.7 151.21 969.7 226.791 507.8 226.778c-173.253 0-343.364-10.645-507.8-32.109z" />
+                    </svg>
+
                     <main className="site-main">
                         {/* All the main content gets inserted here, index.js, post.js */}
                         {children}

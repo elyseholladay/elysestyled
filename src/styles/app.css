@@ -681,11 +681,16 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-head {
-    padding: 10vmin 1rem 5vmin;
+    /* padding: 10vmin 1rem 5vmin; */
+    padding: 10vmin 1rem 0;
     color: #fff;
     background: var(--color-primary);
     background-position: center;
     background-size: cover;
+}
+
+.site-head-curve {
+    fill: var(--color-primary);
 }
 
 .site-nav-item {
