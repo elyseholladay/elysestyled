@@ -28,9 +28,20 @@ const Page = ({ data, bodyClass, location }) => {
             </Helmet>
             <Layout bodyClass={pageClass}>
                 <div className="container">
-                    <article className="content">
-                        <h1 className="content-title">{page.title}</h1>
-
+                <article className="content content-page">
+                    { page.feature_image ?
+                        <div className="page-feature">
+                            <figure className="page-feature-image">
+                                <img src={ page.feature_image } alt={ page.title } />
+                            </figure>
+                            <div className="page-feature-text">
+                                <h1 className="content-title">{page.title}</h1>
+                                <p className="content-excerpt"> {page.excerpt} </p>
+                            </div>
+                        </div>
+                        : <h1 className="content-title">{page.title}</h1>
+                    }
+                        
                         {/* The main page content */}
                         <section
                             className="content-body load-external-scripts"
