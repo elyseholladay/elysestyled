@@ -1,38 +1,16 @@
 /* Layout
 /* ---------------------------------------------------------- */
 
-.viewport {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-}
-
+.viewport {}
 .viewport-top,
 .viewport-bottom {}
 
 .container {
-    max-width: 80vw;
-    margin: 0 auto;
-}
-
-@media (min-width: 1000px) {
-    .container {
-        max-width: 76vw;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 66vw;
-    }
+    margin: 0 10vw;
+    /* use margin instead of max-width to make sure full width images correctly center */
 }
 
 .content {}
-
-.content-body {
-    font-family: var(--font-serif);
-}
 
 
 /* .post-full-content {

@@ -5,7 +5,9 @@ html {
     background: var(--color-offwhite);
 }
 
-body {}
+body {
+    margin: 0;
+}
 
 ::selection {
     text-shadow: none;
