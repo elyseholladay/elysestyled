@@ -1,0 +1,21 @@
+/* EMBEDS, IMAGES and GALLERIES
+/* ---------------------------------------------------------- */
+
+
+/* IMAGES */
+
+.kg-image-card {
+    margin: 2em 0;
+}
+
+.kg-image {
+    max-width: 100%;
+}
+
+.kg-width-wide .kg-image {
+    max-width: 1040px;
+}
+
+.kg-width-full .kg-image {
+    max-width: 100vw;
+}

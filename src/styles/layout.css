@@ -1,4 +1,3 @@
-
 /* Layout
 /* ---------------------------------------------------------- */
 
@@ -18,10 +17,15 @@
 }
 
 @media (min-width: 1000px) {
-    .container { max-width: 76vw; }
+    .container {
+        max-width: 76vw;
+    }
 }
+
 @media (min-width: 1200px) {
-    .container { max-width: 66vw; }
+    .container {
+        max-width: 66vw;
+    }
 }
 
 .content {}
@@ -30,11 +34,13 @@
     font-family: var(--font-serif);
 }
 
+
 /* .post-full-content {
     max-width: 720px;
     margin: 0 auto;
     background: #fff;
 } */
+
 
 /* .post-feature-image img {
     margin: 0 0 3vw;
@@ -128,6 +134,7 @@
     font-size: 2.0rem;
     font-weight: 700;
 } */
+
 
 /* .content-body figure {
     margin: 0.4em 0 1.6em;

@@ -53,8 +53,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                         {/* The navigation items as setup in Ghost */}
                                         <Navigation data={site.navigation} navClass="site-nav-item" />
                                     </nav>
-                                    { <a href="https://www.instagram.com/elyseholladay/" className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter"/></a>}
-                                    { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
+                                    {/* { <a href="https://www.instagram.com/elyseholladay/" className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter"/></a>} */}
+                                    {/* { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>} */}
                                 </div>
                             </div>
                             {/* { isHome ?

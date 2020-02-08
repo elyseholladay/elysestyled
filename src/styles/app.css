@@ -2,6 +2,7 @@
 /* ---------------------------------------------------------- */
 
 @import 'variables.css';
-/* @import 'reset.css'; */
 @import 'globals.css';
-/* @import 'layout.css'; */
+@import 'typography.css';
+@import 'embeds.css';
+@import 'layout.css';

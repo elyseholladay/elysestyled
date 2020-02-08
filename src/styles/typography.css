@@ -1,0 +1,167 @@
+/* Typography
+/* ---------------------------------------------------------- */
+
+html {
+    /* flexible font size between 16-20px */
+    font-size: min(max(16px, 3vw), 20px);
+}
+
+body {
+    font-family: var(--font-serif);
+    font-weight: var(--font-normal);
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga" on;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: var(--color-base);
+    line-height: 1.15;
+    font-weight: var(--font-bold);
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    margin: 0 0 0.5em 0;
+    font-weight: 700;
+    /* font-size: 3.052em; */
+    font-size: 2.441em;
+}
+
+h2 {
+    margin: 1.5em 0 0.5em 0;
+    color: var(--color-primary);
+    font-weight: var(--font-bold);
+    font-style: italic;
+    font-size: 1.953em;
+}
+
+h3 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.563em;
+    color: var(--color-highlight);
+    font-weight: var(--font-bold);
+
+}
+
+h4 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.25em;
+    color: var(--color-highlight);
+    font-weight: var(--font-bold);
+}
+
+h5 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.25em;
+    color: var(--color-highlight);
+    font-weight: var(--font-bold);
+}
+
+h6 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1em;
+}
+
+
+
+blockquote {
+    margin: 1em 0;
+    line-height: 1.4;
+    font-size: 1.2em;
+    font-weight: var(--font-bold);
+    font-style: italic;
+    font-family: var(--font-serif);
+    color: var(--color-primary);
+}
+
+/* Quotation marks */
+blockquote small:before {
+    content: "\2014 \00A0";
+}
+
+blockquote cite {
+    font-weight: bold;
+}
+blockquote cite a {
+    font-weight: normal;
+}
+
+
+
+
+a {
+    color: var(--color-blue);
+    text-decoration: none;
+    transition: color 250ms ease-in;
+}
+
+a:hover {
+    /* text-decoration: underline; */
+    color: var(--color-rose);
+}
+
+
+
+
+p,
+ul,
+ol,
+dl,
+blockquote {
+    margin: 0 0 1.5em 0;
+}
+
+ol,
+ul {
+    padding-left: 1.3em;
+    padding-right: 1.5em;
+}
+
+ol ol,
+ul ul,
+ul ol,
+ol ul {
+    margin: 0.5em 0 1em;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul,
+ol {
+    max-width: 100%;
+}
+
+li {
+    margin: 0.5em 0;
+    padding-left: 0.3em;
+    line-height: 1.6em;
+}
+
+dt {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 120px;
+    font-weight: 500;
+    text-align: right;
+}
+
+dd {
+    margin: 0 0 5px 0;
+    text-align: left;
+}
