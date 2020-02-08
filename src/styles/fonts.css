@@ -1,0 +1,34 @@
+
+/* ------------------------------------------------------------------------- */
+/* FONT-FACE DEFINITIONS --------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+@font-face {
+    font-family: 'Tiempos Text';
+    src: url('../fonts/tiempos/TiemposText-BoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tiempos Text';
+    src: url('../fonts/tiempos/TiemposText-Bold.woff') format('woff');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Tiempos Text';
+    src: url('../fonts/tiempos/TiemposTextWeb-Regular.woff2') format('woff2'), url('../fonts/tiempos/TiemposTextWeb-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tiempos Text';
+    src: url('../fonts/tiempos/TiemposTextWeb-RegularItalic.woff2') format('woff2'), url('../fonts/tiempos/TiemposTextWeb-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');

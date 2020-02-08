@@ -1,0 +1,33 @@
+
+@import 'fonts.css';
+
+/* Variables
+/* ---------------------------------------------------------- */
+
+:root {
+
+    /* Colours */
+    --color-primary: #f1a217; /* in XD: #EBA832; */
+    --color-base: #233135;
+    --color-highlight: #1c568d;
+    --color-secondary: #A5BDC5;
+    --color-border: #8A807C;
+    --color-bg: #f2f2f2;
+    --color-white: #ffffff;
+
+    /* Fonts */
+    --font-sans-serif: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: "Tiempos Text", Georgia, Times, serif;
+    --font-mono: Menlo, Courier, monospace;
+    --font-light: 200;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 800;
+
+    /* Sizes */
+    --height: 4rem;
+    --margin: 2rem;
+    --radius: 0.6rem;
+
+}
+

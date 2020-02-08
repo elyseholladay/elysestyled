@@ -1,0 +1,35 @@
+
+
+/* Coaching Page Banner
+/* ---------------------------------------------------------- */
+.page-coaching-banner {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 8vmin 0 4vmin;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--font-bold);
+    font-size: 1.375rem;
+    line-height: 1.4;
+    max-width: 1010px;
+}
+
+.page-style-coaching .kg-image-card:first-of-type {
+    margin-right: 4vw;
+    /* margin-bottom: 4vh; */
+    transform-origin: top left;
+}
+
+@media (min-width: 500px) {
+    .page-style-coaching .kg-image-card:first-of-type {
+        transform: translateY(-10vh);
+    }
+}
+
+@media (min-width: 800px) {
+    .page-style-coaching .kg-image-card:first-of-type {
+        float: left;
+        max-width: 45%;
+        transform: translateY(-25vh);
+    }
+}
