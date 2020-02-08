@@ -54,6 +54,7 @@ what's here to work the way you'd like it to.
     /* Colours */
     --color-primary: #f1a217; /* in XD: #EBA832; */
     --color-base: #233135;
+    --color-highlight: #1c568d;
     --color-secondary: #A5BDC5;
     --color-border: #8A807C;
     --color-bg: #f2f2f2;
@@ -66,7 +67,7 @@ what's here to work the way you'd like it to.
     --font-light: 200;
     --font-normal: 400;
     --font-medium: 500;
-    --font-bold: 700;
+    --font-bold: 800;
 
     /* Sizes */
     --height: 4rem;
@@ -333,7 +334,7 @@ body {
     overflow-x: hidden;
     color: #3c484e;
     font-family: var(--font-serif);
-    line-height: 1.4em;
+    line-height: 1.6;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0;
@@ -431,23 +432,15 @@ dd {
 }
 
 blockquote {
-    margin: 0.3em 0 1.8em;
-    padding: 0 1.6em 0 1.6em;
-    border-left: #cbeafb 0.5em solid;
+    margin: 1em 0;
+    line-height: 1.4;
+    font-size: 1.2em;
+    font-weight: var(--font-bold);
+    font-style: italic;
+    font-family: var(--font-serif);
+    color: var(--color-primary);
 }
 
-blockquote p {
-    margin: 0.8em 0;
-    /* font-size: 1.2em; */
-    font-weight: 300;
-}
-
-blockquote small {
-    display: inline-block;
-    margin: 0.8em 0 0.8em 1.5em;
-    /* font-size: 0.9em; */
-    opacity: 0.8;
-}
 /* Quotation marks */
 blockquote small:before {
     content: "\2014 \00A0";
@@ -484,52 +477,45 @@ h6 {
 
 h1 {
     margin: 0 0 0.5em 0;
-    /* font-size */
     font-weight: 700;
-}
-@media (max-width: 500px) {
-    h1 {
-        /* font-size: 2rem; */
-    }
+    /* font-size: 3.052em; */
+    font-size: 2.441em;
 }
 
 h2 {
     margin: 1.5em 0 0.5em 0;
-    /* font-size: 2rem; */
-}
-@media (max-width: 500px) {
-    h2 {
-        /* font-size: 1.8rem; */
-    }
+    color: var(--color-highlight);
+    font-weight: var(--font-bold);
+    font-size: 1.953em;
 }
 
 h3 {
     margin: 1.5em 0 0.5em 0;
-    /* font-size: 1.8rem; */
     font-weight: 500;
-}
-@media (max-width: 500px) {
-    h3 {
-        /* font-size: 1.7rem; */
-    }
+    font-size: 1.563em;
+    color: var(--color-highlight);
+    font-weight: var(--font-bold);
+
 }
 
 h4 {
     margin: 1.5em 0 0.5em 0;
-    /* font-size: 1.6rem; */
     font-weight: 500;
+    font-size: 1.25em;
+    color: var(--color-highlight);
+    font-weight: var(--font-bold);
 }
 
 h5 {
     margin: 1.5em 0 0.5em 0;
-    /* font-size: 1.4rem; */
     font-weight: 500;
+    font-size: 1.25em;
 }
 
 h6 {
     margin: 1.5em 0 0.5em 0;
-    /* font-size: 1.4rem; */
     font-weight: 500;
+    font-size: 1em;
 }
 
 /* Layout
@@ -560,8 +546,6 @@ h6 {
 .content {}
 
 .content-body {
-    display: flex;
-    flex-direction: column;
     font-family: var(--font-serif);
 }
 
@@ -899,47 +883,26 @@ h6 {
     width: 26px;
 }
 
-/* Pages Layout and Feature Images
+/* STYLE COACHING PAGE
 /* ---------------------------------------------------------- */
-.page-feature {
+.page-style-coaching .kg-image-card:first-of-type {
+    margin-right: 4vw;
+    /* margin-bottom: 4vh; */
     transform-origin: top left;
-    transform: translateY(-10vh);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: flex-end;
+}
+
+@media (min-width: 500px) {
+    .page-style-coaching .kg-image-card:first-of-type {
+        transform: translateY(-10vh);
+    }
 }
 
 @media (min-width: 800px) {
-    .page-feature {
-        transform: translateY(-15vh);
-        flex-wrap: nowrap;
-        margin-bottom: 4vh;
+    .page-style-coaching .kg-image-card:first-of-type {
+        float: left;
+        max-width: 45%;
+        transform: translateY(-25vh);
     }
-}
-@media (min-width: 1200px) {
-    .page-feature { transform: translateY(-25vh); }
-}
-
-.page-feature-image {
-    max-width: 45%;
-    min-width: 300px;
-    order: 1;
-    flex: 0 1 45%;
-    align-self: flex-start;
-    margin: 0 4vw 4vh 0;
-}
-
-.page-feature-text {
-    order: 2;
-    flex: 1 1 auto;
-    align-self: flex-end;
-}
-
-.content-excerpt {
-    margin-bottom: 0;
 }
 
 
