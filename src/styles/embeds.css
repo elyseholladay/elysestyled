@@ -53,8 +53,6 @@
 
 .kg-gallery-row {
     display: flex;
-    border: 2px solid red;
-    margin: 10px;
     flex-direction: row;
     justify-content: center;
 }

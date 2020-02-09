@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
@@ -16,6 +16,17 @@ const Page = ({ data, bodyClass, location }) => {
     const page = data.ghostPage
     const pageClass = `page-${page.slug}`
 
+    useEffect(() => {
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })  
+    }, [page.html])
+
     return (
         <>
             <MetaData
@@ -30,17 +41,17 @@ const Page = ({ data, bodyClass, location }) => {
                 <div className="container">
                 <article className="content content-page">
                     
-                        {/* <h1 className="content-title">{page.title}</h1> */}
+                        <h1 className="content-title">{page.title}</h1>
                     
                         {/* The main page content */}
-                        {/* { page.feature_image ?
+                        { page.feature_image ?
                             <div className="page-feature">
                                 <figure className="page-feature-image">
                                     <img src={ page.feature_image } alt={ page.title } />
                                 </figure>
                             </div>
                             : null
-                        } */}
+                        }
                         <section
                             className="content-body load-external-scripts"
                             dangerouslySetInnerHTML={{ __html: page.html }}

@@ -3,7 +3,7 @@
 /* Coaching Page Banner
 /* ---------------------------------------------------------- */
 .page-coaching-banner {
-    background: var(--color-primary);
+    background: var(--color-marigold);
     color: #fff;
     padding: 8vmin 0 4vmin;
     font-family: var(--font-serif);
@@ -13,6 +13,8 @@
     line-height: 1.4;
     max-width: 1010px;
 }
+
+.page-style-coaching .content-title { display: none; }
 
 .page-style-coaching .kg-image-card:first-of-type {
     margin-right: 4vw;
