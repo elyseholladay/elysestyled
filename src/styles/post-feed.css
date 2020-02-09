@@ -1,0 +1,65 @@
+/* HOMEPAGE POST FEED
+/* ---------------------------------------------------------- */
+
+.post-feed {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 980px) {
+    .post-feed {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 680px) {
+    .post-feed {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* POST CARD */
+.post-card {}
+
+.post-card-header {
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    font-size: 0.6em;
+    letter-spacing: .5px;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-card-date {
+    color: var(--color-agave);
+}
+
+.post-card-tags {
+    display: none;
+}
+
+.post-card-readingtime {
+    color: var(--color-agave);
+}
+
+.post-card-main {}
+
+.post-card-image {}
+
+.post-card-title {}
+
+.post-card-excerpt {}
+
+
+
+.post-card-image {
+    margin: 0 0 10px 0;
+    width: auto;
+    height: 200px;
+    background: var(--color-secondary) no-repeat center center;
+    background-size: cover;
+}
