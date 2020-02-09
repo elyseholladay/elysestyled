@@ -2,7 +2,7 @@
 /* ---------------------------------------------------------- */
 
 html {
-    background: var(--color-offwhite);
+    background: var(--color-white);
 }
 
 body {
@@ -28,10 +28,11 @@ audio,
 canvas,
 iframe,
 img,
-svg,
 video {
     vertical-align: middle;
 }
+
+svg { vertical-align: top; }
 
 fieldset {
     margin: 0;

@@ -73,6 +73,13 @@
 /* hide page content title */
 .page-style-coaching .content-title { display: none; }
 
+@media (max-width: 800px) {
+    .page-style-coaching .site-nav-scroll-wrapper {
+        background: var(--color-marigold);
+    }
+}
+
+
 /* OVERLAY IMAGE ON HEADER */
 @media (min-width: 0) {
     .page-style-coaching-overlay-image {
@@ -103,13 +110,15 @@
 
 
 /* LAYOUT!!!! omg u can just write html im ded */
-.secondary-offerings {
-    display: flex;
-    justify-content: space-between;
-}
+@media (min-width: 800px) {
+    .secondary-offerings {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.secondary-offerings-item {
-    flex: 0 0 45%;
+    .secondary-offerings-item {
+        flex: 0 0 45%;
+    }
 }
 
 .secondary-offerings-strategy-call {}
@@ -118,14 +127,4 @@
 .testimonial-quote blockquote {
     font-size: 1em;
     color: var(--color-olive);
-}
-
-.wondering-layout {
-    display: flex;
-    justify-content: space-between;
-}
-
-.wondering-layout-image,
-.wondering-layout-text {
-    flex: 0 0 45%;
 }

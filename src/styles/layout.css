@@ -2,18 +2,13 @@
 /* ---------------------------------------------------------- */
 
 .viewport {}
-.viewport-top,
-.viewport-bottom {}
 
 .container {
     max-width: 1100px;
     width: 80vw;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .content {}
 
-
-.site-main {
-    padding: 4vw 0;
-}
+.site-main {}

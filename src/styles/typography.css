@@ -43,21 +43,21 @@ h2 {
 }
 
 h3 {
-    margin: 1.5em 0 0.5em 0;
+    margin: 1.5em 0 .75em 0;
     font-size: 1.563em;
     color: var(--color-marigold);
     font-weight: var(--font-bold);
 }
 
 h4 {
-    margin: .5em 0 1.5em 0;
+    margin: 1.5em 0 .75em 0;
     font-size: 1.25em;
     font-weight: var(--font-bold);
     color: var(--color-storm);
 }
 
 h5 {
-    margin: 1.5em 0 0.5em 0;
+    margin: 1.5em 0 .75em 0;
     font-size: 1.25em;
     font-weight: var(--font-bold);
     color: var(--color-storm);

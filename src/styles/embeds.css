@@ -5,7 +5,7 @@
 /* IMAGES */
 
 .kg-image-card {
-    margin: 2em 0;
+    margin: 4em 0 2em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +18,7 @@
 .kg-image-card.kg-card-hascaption figcaption {
     flex: 1 1 auto;
     align-self: center;
+    font-size: .6em;
 }
 
 
@@ -39,7 +40,6 @@
 
 .kg-width-full .kg-image {
     width: 100vw;
-    margin: 4em 0;
     max-width: unset;
 }
 

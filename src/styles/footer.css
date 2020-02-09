@@ -2,15 +2,16 @@
 /* ---------------------------------------------------------- */
 
 .footer {
-    padding: 1em 2em;
     color: var(--color-agave);
-    background: var(--color-navy);
+    background: var(--color-offblack);
+    padding: 1em 0;
 }
 
 .footer-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: .6em;
 }
 
 .footer-nav a {
@@ -23,6 +24,14 @@
 .footer-nav a:hover {
     opacity: 1;
     color: var(--color-offwhite);
+}
+
+.footer-nav-right {
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    color: var(--color-white);
+    letter-spacing: .5px;
 }
 
 .footer-nav-right a {
