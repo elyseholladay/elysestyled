@@ -24,23 +24,23 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    color: var(--color-navy);
     line-height: 1.15;
     font-weight: var(--font-bold);
     text-rendering: optimizeLegibility;
 }
 
+/* page, post content h1s */
 h1 {
     margin: 0 0 0.5em 0;
     font-weight: 700;
-    /* font-size: 3.052em; */
     font-size: 2.441em;
+    color: var(--color-navy);
 }
 
 h2 {
     margin: 1.5em 0 0.5em 0;
-    color: var(--color-navy);
     font-weight: var(--font-bold);
+    color: var(--color-navy);
     font-style: italic;
     font-size: 1.953em;
 }
@@ -50,26 +50,26 @@ h3 {
     font-size: 1.563em;
     color: var(--color-marigold);
     font-weight: var(--font-bold);
-
 }
 
 h4 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.25em;
-    color: var(--color-blue);
     font-weight: var(--font-bold);
+    color: var(--color-storm);
 }
 
-h5 {
+h5, strong {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.25em;
-    color: var(--color-blue);
     font-weight: var(--font-bold);
+    color: var(--color-storm);
 }
 
 h6 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1em;
+    color: var(--color-storm);
 }
 
 
@@ -100,18 +100,36 @@ blockquote cite a {
 
 
 a {
-    color: var(--color-blue);
-    text-decoration: none;
-    transition: color 250ms ease-in;
+    color: var(--color-storm);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 1.5px;
+    text-underline-position: under;
+    text-decoration-thickness: .125em;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: var(--color-agave);
+    transition: color 250ms ease-in, text-decoration-color 250ms ease-in;
 }
 
 a:hover {
-    /* text-decoration: underline; */
     color: var(--color-rose);
+    text-decoration-color: var(--color-rose);
 }
 
+a:focus {
+    outline: 2px dotted var(--color-marigold);
+    text-decoration-color: var(--color-marigold);
+}
 
+a:active {
+    color: var(--color-marigold);
+    text-decoration-color: var(--color-marigold);
+}
 
+/*  don't underline the site header link or nav links */
+.site-mast a {
+    text-decoration: none;
+}
 
 p,
 ul,

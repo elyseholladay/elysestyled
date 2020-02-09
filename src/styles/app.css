@@ -4,8 +4,10 @@
 @import 'variables.css';
 @import 'globals.css';
 @import 'typography.css';
-@import 'embeds.css';
-@import 'layout.css';
 
+@import 'layout.css';
+@import 'header.css';
+
+@import 'embeds.css';
 
 @import 'page-coaching.css';

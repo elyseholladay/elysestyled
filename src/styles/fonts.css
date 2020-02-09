@@ -32,3 +32,47 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+
+
+/* ------------------------------------------------------------------------- */
+/* ICOMOON ----------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon.eot?wz95x5');
+    src: url('../fonts/icomoon/icomoon.eot?wz95x5#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf?wz95x5') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff?wz95x5') format('woff'),
+        url('../fonts/icomoon/icomoon.svg?wz95x5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quotes-left:before {
+    content: "\e907";
+}
+
+.icon-share2:before {
+    content: "\e900";
+}
+
+.icon-instagram:before {
+    content: "\e902";
+}

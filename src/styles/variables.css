@@ -6,21 +6,18 @@
 :root {
 
     /* Colors */
-    --color-offblack: #233135;
+    --color-offblack: rgba(35, 49, 53, 1); /* #233135; */
     --color-offwhite: #f2f2f2;
     --color-white: #ffffff;
-    --color-greige: #8A807C;
-    --color-blue: #1c568d;
-    --color-navy: #002E5A;
-    --color-navy-faded: rgba( var(--color-navy), .45 );
-    --color-agave: #A5BDC5; 
-    --color-agave-faded: rgba( var(--color-agave), .35 );
-    --color-olive: #4B6026;
-    --color-olive-faded: rgba( var(--color-agave), .45 );
-    --color-marigold: #f1a217;
-    --color-marigold-faded: rgba( var(--color-marigold), .45 );
-    --color-rose: #C16E70;
-    --color-rose-faded: rgba( var(--color-rose), .15 );
+    --color-greige: rgba(138, 128, 124, 1); /* #8A807C; */
+    --color-storm: rgba(77, 113, 126, 1); /* #4D717E; */
+    --color-navy: rgba(22, 67, 83, 1); /* #002E5A; */
+    --color-agave: rgba(165, 189, 197, 1); /*#A5BDC5;  */
+    --color-olive: rgba(75, 96, 38, 1); /*#4B6026; */
+    --color-marigold: rgba(241, 162, 23, 1) ; /*#f1a217; */
+    --color-rose: rgba(193, 110, 112, 1); /* #C16E70; */
+    --color-rose-light: rgba(193, 110, 112, .35); /* #C16E70; */
+
 
     /* Fonts */
     --font-sans-serif: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

@@ -39,23 +39,17 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
                         <div className="container">
                             <div className="site-mast">
-                                <div className="site-mast-left">
-                                    <Link to="/">
-                                        {/* {site.logo ?
-                                            <img className="site-logo" src={site.logo} alt={site.title} />
-                                            : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
-                                        } */}
-                                        <h1 className="site-mast-title">{site.title}</h1>
-                                    </Link>
-                                </div>
-                                <div className="site-mast-right">
-                                    <nav className="site-nav">
-                                        {/* The navigation items as setup in Ghost */}
-                                        <Navigation data={site.navigation} navClass="site-nav-item" />
-                                    </nav>
-                                    {/* { <a href="https://www.instagram.com/elyseholladay/" className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter"/></a>} */}
-                                    {/* { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>} */}
-                                </div>
+                                <Link to="/" className="site-mast-title">
+                                    <h1>{site.title}</h1>
+                                </Link>
+                                <nav className="site-nav">
+                                    {/* The navigation items as setup in Ghost */}
+                                    <Navigation data={site.navigation} navClass="site-nav-item" />
+                                    { <a href="https://www.instagram.com/elyseholladay/" className="site-nav-item icon-a11y" target="_blank" rel="noopener noreferrer">
+                                        <span class="icon-instagram" aria-hidden="true"></span>
+                                            <span class="screen-reader-text">Instagram</span>
+                                    </a>}
+                                </nav>
                             </div>
                             {/* { isHome ?
                                 <div className="site-banner">
@@ -63,7 +57,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 </div>} :
                                 null */}
                             { bodyClass=="page-style-coaching" ? 
-                                <div className="page-coaching-banner">
+                                <div className="page-style-coaching-tagline">
                                     investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes.
                                 </div> :
                                 null 

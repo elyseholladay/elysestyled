@@ -1,45 +1,17 @@
-
-
 /* Header
 /* ---------------------------------------------------------- */
 
 .site-head {
-    padding: 10vmin 1rem 0;
-    color: #fff;
-    background: var(--color-marigold);
-    background-position: center;
-    background-size: cover;
+    padding: 4vmin 0 .5em 0;
 }
 
-.site-head-curve {
-    fill: var(--color-marigold);
+/* only use for the entire site h1 */
+.site-head h1 {
+    font-size: 3.052em;
 }
 
-.site-nav-item {
-    display: inline-block;
-    padding: 0 1rem;
-    color: var(--color-white);
-    text-transform: uppercase;
-    font-family: var(--font-sans-serif);
-    font-weight: var(--font-medium);
-    font-size: 0.6rem;
-    opacity: 0.7;
-    transition: .5s opacity ease-in-out;
-}
 
-.site-nav-item:hover {
-    text-decoration: none;
-    opacity: 1;
-}
-
-.site-nav-icon {
-    height: 15px;
-    margin: -5px 0 0;
-}
-
-.site-logo {
-    height: 25px;
-}
+/* SITE MAST */
 
 .site-mast {
     display: flex;
@@ -47,56 +19,51 @@
     justify-content: space-between;
 }
 
-.site-mast-left a:hover {
-    text-decoration: none;
-}
+/* contains the site title */
+.site-mast-left {}
 
-.site-mast-title {
+.site-mast-title h1 {
     margin: 0;
     padding: 0;
-    color: #fff;
-    font-size: 2.45rem;
     font-style: italic;
-    opacity: 0.7;
-    transition: .5s opacity ease-in-out;
+    color: var(--color-navy);
+    transition: color 250ms ease-in;
 }
 
-.site-mast-title:hover {
-    text-decoration: none;
-    opacity: 1;
+.site-mast-title:hover h1 {
+    color: var(--color-rose);
 }
 
-.site-mast-right {
-    display: flex;
-    align-items: center;
-}
+/* contains the site nav */
+.site-mast-right {}
 
-.site-mast-right .site-nav-item:last-child {
-    padding-right: 0;
-}
+/* SITE NAV */
 
 .site-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px 0 0 0;
 }
 
-.site-nav-left {
-    margin: 0 20px 0 -10px;
+.site-nav-item {
+    margin-right: 2em;
 }
 
-.site-nav-button {
-    display: inline-block;
-    padding: 5px 10px;
-    border: #fff 1px solid;
-    color: #fff;
-    /* font-size: 1.3rem; */
-    line-height: 1em;
-    border-radius: var(--radius);
-    opacity: 0.7;
+.site-nav-item:last-of-type {
+    margin-right: 0;
 }
 
-.site-nav-button:hover {
-    text-decoration: none;
+.site-nav-item {
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    color: var(--color-navy);
+    font-size: 0.6em;
+    letter-spacing: .5px;
 }
+
+.site-nav-item:hover,
+.site-nav-item:focus {
+    color: var(--color-rose);
+}
+

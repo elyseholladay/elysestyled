@@ -30,3 +30,34 @@
     color: var(--color-secondary);
     /* font-size: 1.3rem; */
 }
+
+
+.pagination {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: var(--font-size-6);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--taupe);
+    border-top: 2px solid var(--vanilla);
+    /* border-bottom: 2px solid var(--vanilla); */
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 320px) {
+    .pagination {
+        margin-bottom: 2rem;
+    }
+}
+
+.page-number {}
+.page-number-current {}
+
+.pagination-posts {}
+
+.pagination-posts a.older-posts {
+    margin-left: 15px;
+}

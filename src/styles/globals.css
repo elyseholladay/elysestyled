@@ -7,11 +7,12 @@ html {
 
 body {
     margin: 0;
+    min-width: 300px; /* don't be smaller than 300px on devices, because it's impossible */
 }
 
 ::selection {
     text-shadow: none;
-    background: #cbeafb;
+    background: var(--color-rose-light);
 }
 
 hr {
@@ -57,3 +58,15 @@ img {
     height: auto;
     max-width: 100%;
 } 
+
+
+.icon-a11y {
+  display: inline-block; /* Fix for clickability issue in WebKit */
+}
+
+/* hide screen reader text */
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
