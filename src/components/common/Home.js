@@ -18,7 +18,7 @@ const Home = ({ data }) => {
 
             <div className="home-mission">
                 <div className="home-mission-image">
-                    {profile_image && <img src={profile_image} alt={name} />}
+                    {profile_image && <img src={profile_image} alt="photo of Elyse" />}
                 </div>
                 <div className="home-mission-text">
                     <h3>investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes. are you ready?</h3>
