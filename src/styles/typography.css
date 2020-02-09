@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    color: var(--color-base);
+    color: var(--color-navy);
     line-height: 1.15;
     font-weight: var(--font-bold);
     text-rendering: optimizeLegibility;
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
     margin: 1.5em 0 0.5em 0;
-    color: var(--color-primary);
+    color: var(--color-navy);
     font-weight: var(--font-bold);
     font-style: italic;
     font-size: 1.953em;
@@ -48,7 +48,7 @@ h2 {
 h3 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.563em;
-    color: var(--color-highlight);
+    color: var(--color-marigold);
     font-weight: var(--font-bold);
 
 }
@@ -56,14 +56,14 @@ h3 {
 h4 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.25em;
-    color: var(--color-highlight);
+    color: var(--color-blue);
     font-weight: var(--font-bold);
 }
 
 h5 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.25em;
-    color: var(--color-highlight);
+    color: var(--color-blue);
     font-weight: var(--font-bold);
 }
 
@@ -81,7 +81,7 @@ blockquote {
     font-weight: var(--font-bold);
     font-style: italic;
     font-family: var(--font-serif);
-    color: var(--color-primary);
+    color: var(--color-rose);
 }
 
 /* Quotation marks */

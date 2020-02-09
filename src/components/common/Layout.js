@@ -11,18 +11,28 @@ import config from '../../utils/siteConfig'
 import '../../styles/app.css'
 
 /**
-* Main layout component
-*
-* The Layout component wraps around each page and template.
-* It also provides the header, footer as well as the main
-* styles, and meta data for each page.
-*
-*/
+ * Main layout component
+ *
+ * The Layout component wraps around each page and template.
+ * It also provides the header, footer as well as the main
+ * styles, and meta data for each page.
+ *
+ */
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = data.allGhostSettings.edges[0].node
     
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
+
+    var images = document.querySelectorAll('.kg-gallery-image img');
+
+    images.forEach(function (image) {
+        var container = image.closest('.kg-gallery-image');
+        var width = image.attributes.width.value;
+        var height = image.attributes.height.value;
+        var ratio = width / height;
+        container.style.flex = ratio + ' 1 0%';
+    })  
 
     return (
         <>

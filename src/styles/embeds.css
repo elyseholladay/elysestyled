@@ -11,7 +11,6 @@
     justify-content: center;
 }
 
-
 .kg-image-card .kg-image {
     align-self: center;
 }
@@ -21,7 +20,9 @@
     align-self: center;
 }
 
+
 /* regular images only */
+
 .kg-image-card:not(.kg-width-wide):not(.kg-width-full) .kg-image {
     max-width: 60%;
 }
@@ -38,4 +39,57 @@
 
 .kg-width-full .kg-image {
     width: 100vw;
+}
+
+
+/* GALLERY */
+
+.kg-gallery-card {}
+
+.kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.kg-gallery-row {
+    display: flex;
+    border: 2px solid red;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kg-gallery-image img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.kg-gallery-row:not(:first-of-type) {
+    margin: 0.75em 0 0 0;
+}
+
+.kg-gallery-image:not(:first-of-type) {
+    margin: 0 0 0 0.75em;
+}
+
+.kg-gallery-card+.kg-image-card.kg-width-wide,
+.kg-gallery-card+.kg-gallery-card,
+.kg-image-card.kg-width-wide+.kg-gallery-card,
+.kg-image-card.kg-width-wide+.kg-image-card.kg-width-wide {
+    margin: -2.25em 0 3em;
+}
+
+
+/* VIDEO AND INSTAGRAM EMBED CARDS */
+
+.kg-embed-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.kg-embed-card .fluid-width-video-wrapper {
+    margin: 0;
 }
