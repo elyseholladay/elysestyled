@@ -44,6 +44,10 @@ textarea {
     resize: vertical;
 }
 
+figure {
+    margin: 0;
+}
+
 figure img {
     margin: 0;
 }
@@ -75,5 +79,6 @@ img {
 
 .container {
     max-width: 1000px;
+    width: 85vw;
     margin: 0 auto; 
 }
