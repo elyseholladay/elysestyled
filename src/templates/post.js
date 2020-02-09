@@ -19,7 +19,6 @@ const Post = ({ data, location }) => {
     const date = `${post.published_at_pretty}`
     const url = `/${post.slug}/`
     const readingTime = readingTimeHelper(post)
-    console.log(post)
 
     useGalleryResize(post.html)
 
