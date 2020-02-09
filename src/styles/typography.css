@@ -87,10 +87,6 @@ blockquote {
 a {
     color: var(--color-storm);
     text-decoration: underline;
-    text-decoration-style: dashed;
-    text-underline-offset: 1.5px;
-    text-underline-position: under;
-    text-decoration-thickness: .125em;
     text-decoration-skip-ink: auto;
     text-decoration-color: var(--color-agave);
     transition: color 250ms ease-in, text-decoration-color 250ms ease-in;
@@ -98,7 +94,7 @@ a {
 
 a:hover {
     color: var(--color-rose);
-    text-decoration-color: var(--color-rose);
+    text-decoration-color: var(--color-rose-light);
 }
 
 a:focus {

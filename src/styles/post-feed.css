@@ -4,18 +4,24 @@
 .post-feed {
     display: grid;
     justify-content: space-between;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (max-width: 980px) {
-    .post-feed {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media (max-width: 680px) {
+@media (min-width: 0) {
     .post-feed {
         grid-template-columns: 1fr;
+        grid-gap: 4em;
+    }
+}
+
+@media (min-width: 600px) {
+    .post-feed {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+}
+@media (min-width: 1000px) {
+    .post-feed {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -26,12 +32,22 @@
     font-family: var(--font-sans-serif);
     font-weight: var(--font-medium);
     text-transform: uppercase;
-    font-size: 0.6em;
     letter-spacing: .5px;
     margin-bottom: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (min-width: 0) {
+    .post-card-header {
+        font-size: 0.6em;
+    }
+}
+@media (min-width: 600px) {
+    .post-card-header {
+        font-size: 0.5em;
+    }
 }
 
 .post-card-date {
@@ -46,20 +62,48 @@
     color: var(--color-agave);
 }
 
-.post-card-main {}
+/* this element is also a link wrapper around the image and title */
+.post-card-main {
+    /* text-decoration: none; */
+    display: block;
+}
 
-.post-card-image {}
+.post-card-title {
+    margin: 0 0 .5em 0;
+    transition: color 250ms ease-in;
+}
 
-.post-card-title {}
+.post-card-main:hover .post-card-title {
+    color: var(--color-rose);
+}
 
-.post-card-excerpt {}
-
-
+.post-card-excerpt {
+    font-size: .75em;
+}
 
 .post-card-image {
-    margin: 0 0 10px 0;
+    margin: 0 0 1em 0;
     width: auto;
-    height: 200px;
+    height: 240px;
     background: var(--color-secondary) no-repeat center center;
     background-size: cover;
+}
+
+.post-card-image-wrapper {
+    position: relative;
+}
+
+.post-card-image:before {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    content: "";
+    box-shadow: 0 0 0 3px rgba(165, 189, 197, .25);
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 250ms ease-in;
+}
+
+.post-card-main:hover .post-card-image:before {
+    box-shadow: 0 0 0 3px rgba(193, 110, 112, .25);
 }

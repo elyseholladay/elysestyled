@@ -15,18 +15,19 @@ const PostCard = ({ post }) => {
                 <div className="post-card-date">{date}</div>
                 {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
                 <div className="post-card-readingtime">{readingTime}</div>
-                {post.featured && <span>Featured</span>}
             </header>
             
             <Link to={url} className="post-card-main">
+                <div className="post-card-image-wrapper">
                 {post.feature_image &&
                     <div className="post-card-image" style={{ backgroundImage: `url(${post.feature_image})` ,
                     }}></div>
                 }
+                </div>
 
-                <h2 className="post-card-title">
-                    <Link to={url}>{post.title}</Link>
-                </h2>
+                <h6 className="post-card-title">
+                    {post.title}
+                </h6>
             </Link>
 
             <section className="post-card-excerpt">{post.excerpt}</section>
