@@ -38,7 +38,7 @@
 }
 
 .site-mast-title:hover h1 {
-    color: var(--color-rose);
+    color: var(--color-agave);
 }
 
 /* contains the site nav */
@@ -72,7 +72,7 @@
 
 .site-nav-item:hover,
 .site-nav-item:focus {
-    color: var(--color-rose);
+    color: var(--color-agave);
 }
 
 /* RESPONSIVE SITE NAV SIDE SCROLL */

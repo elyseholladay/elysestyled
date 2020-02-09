@@ -20,6 +20,7 @@ import '../../styles/app.css'
  */
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = data.allGhostSettings.edges[0].node
+    console.log(site)
     
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
@@ -35,7 +36,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <div className="viewport">
 
                 {/* The main header section on top of the screen */}
-                <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
+                <header className="site-head">
                     <div className="container">
                         <div className="site-mast">
                             <Link to="/" className="site-mast-title">
@@ -46,8 +47,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     {/* The navigation items as setup in Ghost */}
                                     <Navigation data={site.navigation} navClass="site-nav-item" />
                                     { <a href="https://www.instagram.com/elyseholladay/" className="site-nav-item icon-a11y" target="_blank" rel="noopener noreferrer">
-                                        <span class="icon-instagram" aria-hidden="true"></span>
-                                            <span class="screen-reader-text">Instagram</span>
+                                        <span className="icon-instagram" aria-hidden="true"></span>
+                                            <span className="screen-reader-text">Instagram</span>
                                     </a>}
                                 </nav>
                             </div>
@@ -69,7 +70,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                 <main className="site-main container">
                     { isHome ?
-                        <Home></Home> :
+                        <Home pageContext="site"></Home> :
                         null
                     }
 

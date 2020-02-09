@@ -64,7 +64,6 @@
 
 /* this element is also a link wrapper around the image and title */
 .post-card-main {
-    /* text-decoration: none; */
     display: block;
 }
 
@@ -74,7 +73,7 @@
 }
 
 .post-card-main:hover .post-card-title {
-    color: var(--color-rose);
+    color: var(--color-marigold);
 }
 
 .post-card-excerpt {
@@ -85,7 +84,8 @@
     margin: 0 0 1em 0;
     width: auto;
     height: 240px;
-    background: var(--color-secondary) no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: 0 0;
     background-size: cover;
 }
 
@@ -98,12 +98,12 @@
     left: 8px;
     top: 8px;
     content: "";
-    box-shadow: 0 0 0 3px rgba(165, 189, 197, .25);
+    box-shadow: 0 0 0 3px var(--color-agave-light);
     width: 100%;
     height: 100%;
     transition: box-shadow 250ms ease-in;
 }
 
 .post-card-main:hover .post-card-image:before {
-    box-shadow: 0 0 0 3px rgba(193, 110, 112, .25);
+    box-shadow: 0 0 0 3px var(--color-marigold-light);
 }

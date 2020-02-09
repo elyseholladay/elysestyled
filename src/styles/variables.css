@@ -13,10 +13,13 @@
     --color-storm: rgba(77, 113, 126, 1); /* #4D717E; */
     --color-navy: rgba(22, 67, 83, 1); /* #002E5A; */
     --color-agave: rgba(165, 189, 197, 1); /*#A5BDC5;  */
+    --color-agave-light: rgba(165, 189, 197, .25); /*#A5BDC5;  */
     --color-olive: rgba(75, 96, 38, 1); /*#4B6026; */
     --color-marigold: rgba(241, 162, 23, 1); /*#f1a217; */
+    --color-marigold-mid: rgba(241, 162, 23, .65); /*#f1a217; */
+    --color-marigold-light: rgba(241, 162, 23, .25);
     --color-rose: rgba(193, 110, 112, 1); /* #C16E70; */
-    --color-rose-light: rgba(193, 110, 112, .35); /* #C16E70; */
+    --color-rose-light: rgba(193, 110, 112, .25); /* #C16E70; */
 
 
     /* Fonts */

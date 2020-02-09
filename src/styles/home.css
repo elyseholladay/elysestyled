@@ -1,0 +1,23 @@
+/* HOME
+/* ---------------------------------------------------------- */
+
+.home {
+    padding: 10vh 0 12vh;
+}
+
+@media (min-width: 800px) {
+    .home-intro-text {
+        width: 50%;
+    }
+}
+
+.home-intro-text a {
+    text-decoration: none;
+    box-shadow: inset 0 -.65em 0 0 var(--color-marigold-light);
+    transition: box-shadow 250ms ease-in;
+}
+
+.home-intro-text a:hover {
+    color: unset;
+    box-shadow: inset 0 -.65em 0 0 var(--color-marigold-mid);
+}

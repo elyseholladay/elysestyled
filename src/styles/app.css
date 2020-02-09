@@ -12,6 +12,8 @@
 @import 'embeds.css';
 
 @import 'post-feed.css';
+@import 'pagination.css';
 
+@import 'home.css';
 @import 'page-coaching.css';
 @import 'page-about.css';
