@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Navigation } from '.'
+import { Navigation, Home } from '.'
 import config from '../../utils/siteConfig'
 
 // Styles
@@ -53,11 +53,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </nav>
                                 </div>
                             </div>
-                            {/* { isHome ?
-                                <div className="site-banner">
-                                homepage only big site banner goes here
-                                </div>} :
-                                null */}
+                            { isHome ?
+                                <Home></Home> :
+                                null
+                            }
                             { bodyClass=="page-style-coaching" ? 
                                 <div className="page-style-coaching-tagline">
                                     investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes.
