@@ -76,7 +76,7 @@
 /* OVERLAY IMAGE ON HEADER */
 @media (min-width: 0) {
     .page-style-coaching-overlay-image {
-        transform: translateY(-8vh);
+        transform: translateY(-5vh);
         transform-origin: top left;
         margin: 0;
         margin: 0;

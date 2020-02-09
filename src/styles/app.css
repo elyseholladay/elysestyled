@@ -7,7 +7,9 @@
 
 @import 'layout.css';
 @import 'header.css';
+@import 'footer.css';
 
 @import 'embeds.css';
 
 @import 'page-coaching.css';
+@import 'page-about.css';

@@ -1,3 +1,5 @@
-
 /* ABOUT PAGE */
 .page-about {}
+
+/* hide page content title */
+.page-about .content-title { display: none; }

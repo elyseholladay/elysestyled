@@ -80,7 +80,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <footer className="footer">
                     <div className="footer-nav container">
                         <div className="footer-nav-left">
-                            <Link to="/">{site.title}</Link> © 2019 &mdash; Published with <a className="footer-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
+                            <small>
+                                © 2019 &mdash; Published with <a className="footer-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
+                            </small>
                         </div>
                         <div className="footer-nav-right">
                             <Navigation data={site.navigation} navClass="footer-nav-item" />
