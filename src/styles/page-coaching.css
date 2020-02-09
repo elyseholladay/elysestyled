@@ -34,19 +34,37 @@
     opacity: 1;
 }
 
+@media (max-width: 800px) {
+    .page-style-coaching .site-mast-title h1,
+    .page-style-coaching .site-nav-item {
+        opacity: 1;
+    }
+}
+
 .page-style-coaching-tagline {
     color: var(--color-white);
     padding: 4vmin 0 2vmin;
     font-weight: var(--font-bold);
     font-style: italic;
-    font-size: 1.275em;
     line-height: 1.4;
     display: none;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 321px) {
     .page-style-coaching-tagline {
         display: block;
+    }
+}
+
+@media (min-width: 375px) {
+    .page-style-coaching-tagline {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 800px) {
+    .page-style-coaching-tagline {
+        font-size: 1.275em;
     }
 }
 

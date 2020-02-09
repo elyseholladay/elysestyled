@@ -6,7 +6,7 @@
 .viewport-bottom {}
 
 .container {
-    margin: 0 10vw;
+    margin: 0 8vw;
     /* use margin instead of max-width to make sure full width images correctly center */
 }
 

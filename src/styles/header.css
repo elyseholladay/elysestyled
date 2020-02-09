@@ -15,8 +15,15 @@
 
 .site-mast {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .site-mast {
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
 /* contains the site title */
@@ -67,3 +74,43 @@
     color: var(--color-rose);
 }
 
+/* RESPONSIVE SITE NAV SIDE SCROLL */
+
+@media (max-width: 800px) {
+    .site-mast-title {
+        padding-top: 2em;
+    }
+    .site-mast-title h1 {
+        font-size: 2.441em;
+    }
+
+    .site-nav-scroll-wrapper {
+        position: fixed;
+        top: 0;
+        right: 6vw;
+        left: 6vw;
+        z-index: 1000;
+    }
+
+    .site-nav {
+        position: relative;
+        z-index: 100;
+        min-height: 52px;
+        padding: 0 2vw;
+        font-size: 1.3em;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        -ms-overflow-scrolling: touch;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    .site-nav-scroll-wrapper {
+        top: 2.5vh;
+    }
+    .site-nav {
+        font-size: 1.1em;
+    }
+}

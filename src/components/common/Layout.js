@@ -42,14 +42,16 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <Link to="/" className="site-mast-title">
                                     <h1>{site.title}</h1>
                                 </Link>
-                                <nav className="site-nav">
-                                    {/* The navigation items as setup in Ghost */}
-                                    <Navigation data={site.navigation} navClass="site-nav-item" />
-                                    { <a href="https://www.instagram.com/elyseholladay/" className="site-nav-item icon-a11y" target="_blank" rel="noopener noreferrer">
-                                        <span class="icon-instagram" aria-hidden="true"></span>
-                                            <span class="screen-reader-text">Instagram</span>
-                                    </a>}
-                                </nav>
+                                <div className="site-nav-scroll-wrapper">
+                                    <nav className="site-nav">
+                                        {/* The navigation items as setup in Ghost */}
+                                        <Navigation data={site.navigation} navClass="site-nav-item" />
+                                        { <a href="https://www.instagram.com/elyseholladay/" className="site-nav-item icon-a11y" target="_blank" rel="noopener noreferrer">
+                                            <span class="icon-instagram" aria-hidden="true"></span>
+                                                <span class="screen-reader-text">Instagram</span>
+                                        </a>}
+                                    </nav>
+                                </div>
                             </div>
                             {/* { isHome ?
                                 <div className="site-banner">
