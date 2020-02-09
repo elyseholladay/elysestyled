@@ -2,6 +2,10 @@
 /* ---------------------------------------------------------- */
 @import 'bookmarks.css';
 
+.kg-card {
+    margin: 4em 0;
+}
+
 /* IMAGES */
 
 .kg-image-card {
@@ -15,10 +19,11 @@
     align-self: center;
 }
 
-.kg-image-card.kg-card-hascaption figcaption {
+.kg-card-hascaption figcaption {
     flex: 1 1 auto;
     align-self: center;
-    font-size: .6em;
+    font-size: .8em;
+    font-style: italic;
 }
 
 

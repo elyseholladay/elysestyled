@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import { Tags } from '@tryghost/helpers-gatsby'
+import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 import { Layout, useGalleryResize } from '../components/common'
 import { MetaData } from '../components/common/meta'
@@ -14,6 +16,10 @@ import { MetaData } from '../components/common/meta'
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
+    const date = `${post.published_at_pretty}`
+    const url = `/${post.slug}/`
+    const readingTime = readingTimeHelper(post)
+    console.log(post)
 
     useGalleryResize(post.html)
 
@@ -29,14 +35,29 @@ const Post = ({ data, location }) => {
             </Helmet>
             <Layout>
                 <div className="container">
-                    <article className="content">
+                    <article className="content post">
+                        <div className="post-header">
+                            <div className="post-meta">
+                                <div className="post-date-time">
+                                    {date} ·  {readingTime}
+                                </div>
+                                {post.tags && <div className="post-tags">
+                                    <Tags post={post} visibility="public" autolink={false}/>
+                                </div>}
+                            </div>
+
+                            <h1 className="post-title content-title">{post.title}</h1>
+                            
+                            <p className="post-excerpt">{post.excerpt}</p>
+
+                        </div>
+
                         { post.feature_image ?
                             <figure className="post-feature-image">
                                 <img src={ post.feature_image } alt={ post.title } />
                             </figure> : null }
-                        <section className="post-full-content">
-                            <h1 className="content-title">{post.title}</h1>
 
+                        <section className="post-full-content">
                             {/* The main post content */ }
                             <section
                                 className="content-body load-external-scripts"
