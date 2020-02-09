@@ -69,3 +69,11 @@ img {
   top: -9999px;
   left: -9999px;
 }
+
+/* LAYOUT */
+.viewport {}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto; 
+}

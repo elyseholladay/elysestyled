@@ -2,10 +2,9 @@
 /* ---------------------------------------------------------- */
 
 @import 'variables.css';
-@import 'globals.css';
 @import 'typography.css';
+@import 'globals.css';
 
-@import 'layout.css';
 @import 'header.css';
 @import 'footer.css';
 

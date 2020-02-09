@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-const Home = ({ pageContext }) => {
-    console.log(pageContext)
+const Home = ({ data }) => {
+    const profile_image = data.profile_image
 
     return (
         <div className="home">
@@ -17,7 +17,12 @@ const Home = ({ pageContext }) => {
             </div>
 
             <div className="home-mission">
-                <img src="${cover_image}">
+                <div className="home-mission-image">
+                    {profile_image && <img src={profile_image} alt={name} />}
+                </div>
+                <div className="home-mission-text">
+                    <h3>investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes. are you ready?</h3>
+                </div>
             </div>
         </div>
     )

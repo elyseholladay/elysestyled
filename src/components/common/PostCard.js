@@ -13,7 +13,9 @@ const PostCard = ({ post }) => {
         <div className="post-card">
             <header className="post-card-header">
                 <div className="post-card-date">{date}</div>
-                {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
+                {post.tags && <div className="post-card-tags">
+                    <Tags post={post} visibility="public" autolink={false}/>
+                </div>}
                 <div className="post-card-readingtime">{readingTime}</div>
             </header>
             
