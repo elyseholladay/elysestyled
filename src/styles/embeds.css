@@ -39,6 +39,8 @@
 
 .kg-width-full .kg-image {
     width: 100vw;
+    margin: 4em 0;
+    max-width: unset;
 }
 
 

@@ -53,13 +53,13 @@ h3 {
 }
 
 h4 {
-    margin: 1.5em 0 0.5em 0;
+    margin: .5em 0 1.5em 0;
     font-size: 1.25em;
     font-weight: var(--font-bold);
     color: var(--color-storm);
 }
 
-h5, strong {
+h5 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.25em;
     font-weight: var(--font-bold);
@@ -72,7 +72,9 @@ h6 {
     color: var(--color-storm);
 }
 
-
+strong {
+    color: var(--color-navy);
+}
 
 blockquote {
     margin: 1em 0;
@@ -83,20 +85,6 @@ blockquote {
     font-family: var(--font-serif);
     color: var(--color-rose);
 }
-
-/* Quotation marks */
-blockquote small:before {
-    content: "\2014 \00A0";
-}
-
-blockquote cite {
-    font-weight: bold;
-}
-blockquote cite a {
-    font-weight: normal;
-}
-
-
 
 
 a {

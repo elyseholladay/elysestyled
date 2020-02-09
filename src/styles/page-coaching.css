@@ -12,6 +12,7 @@
     vertical-align: top;
 }
 
+/* WHITE SITE TITLE AND NAV */
 .page-style-coaching .site-mast-title h1 {
     color: var(--color-white);
     opacity: 0.7;
@@ -41,6 +42,7 @@
     }
 }
 
+/* RESPONSIVE BIG TEXT TAGLINE */
 .page-style-coaching-tagline {
     color: var(--color-white);
     padding: 4vmin 0 2vmin;
@@ -68,23 +70,62 @@
     }
 }
 
+/* hide page content title */
 .page-style-coaching .content-title { display: none; }
 
-.page-style-coaching .kg-image-card:first-of-type {
-    margin-right: 4vw;
-    transform-origin: top left;
-}
+/* OVERLAY IMAGE ON HEADER */
+@media (min-width: 0) {
+    .page-style-coaching-overlay-image {
+        transform: translateY(-8vh);
+        transform-origin: top left;
+        margin: 0;
+        margin: 0;
+    }
 
-@media (min-width: 500px) {
-    .page-style-coaching .kg-image-card:first-of-type {
-        transform: translateY(-10vh);
+    .page-style-coaching-overlay-image .kg-image-card {
+        margin: 0;
+    }
+
+    .page-style-coaching-overlay-image .kg-image {
+        max-width: 90% !important; /* lol fuck it */
+        align-self: flex-start; /* align left, not center */
     }
 }
 
-@media (min-width: 800px) {
-    .page-style-coaching .kg-image-card:first-of-type {
+@media (min-width: 768px) {
+    .page-style-coaching-overlay-image {
+        transform: translateY(-12vh);
         float: left;
-        max-width: 45%;
-        transform: translateY(-25vh);
+        max-width: 56%;
+        margin-right: 1em;
     }
+}
+
+
+/* LAYOUT!!!! omg u can just write html im ded */
+.secondary-offerings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary-offerings-item {
+    flex: 0 0 45%;
+}
+
+.secondary-offerings-strategy-call {}
+.secondary-offerings-workshops {}
+
+.testimonial-quote blockquote {
+    font-size: 1em;
+    color: var(--color-olive);
+}
+
+.wondering-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wondering-layout-image,
+.wondering-layout-text {
+    flex: 0 0 45%;
 }
