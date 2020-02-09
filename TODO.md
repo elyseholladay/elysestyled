@@ -4,3 +4,4 @@
 * figure out what's up with embedded videos and IG, use a plugin?
 * make /blog route
 * make home show a limit of 3 posts (pagecontext.limit), but more on /blog and pagination
+* workshops signups with https://ghost.org/docs/members/signup-signin-forms/
