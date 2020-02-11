@@ -6,7 +6,7 @@ import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 const PostCard = ({ post }) => {
     const date = `${post.published_at_pretty}`
-    const url = `/${post.slug}/`
+    const url = `/blog/${post.slug}/`
     const readingTime = readingTimeHelper(post)
 
     return (

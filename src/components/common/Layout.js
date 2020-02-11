@@ -111,13 +111,6 @@ const DefaultLayoutSettingsQuery = props => (
                         }
                     }
                 }
-                allGhostAuthor {
-                    edges {
-                        node {
-                            ...GhostAuthorFields
-                        }
-                    }
-                }
                 file(relativePath: {eq: "ghost-icon.png"}) {
                     childImageSharp {
                         fixed(width: 30, height: 30) {

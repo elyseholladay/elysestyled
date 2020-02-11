@@ -1,7 +1,7 @@
 module.exports = {
     siteUrl: `https://elysestyled.com`, // Site domain. Do not include a trailing slash!
 
-    postsPerPage: 3, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
+    postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
     siteTitleMeta: `Elyse Styled`, // This allows an alternative site title for meta data for pages.
     siteDescriptionMeta: `style coaching • personal style diary • curated wardrobe • ethical fashion • intentional living`, // This allows an alternative site description for meta data for pages.
