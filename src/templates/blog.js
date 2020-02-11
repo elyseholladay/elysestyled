@@ -6,7 +6,7 @@ import { Layout, PostCard, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
 /**
-* Main index page (home page)
+* Blog /blog Page
 *
 * Loads all posts from Ghost and uses pagination to navigate through them.
 * The number of posts that should appear per page can be setup
@@ -15,13 +15,12 @@ import { MetaData } from '../components/common/meta'
 */
 const Index = ({ data, location, pageContext }) => {
     const posts = data.allGhostPost.edges
-    const limit = pageContext.limit
 
     return (
         <>
             <MetaData location={location} />
             <Layout>
-                <div className="container">
+                <div className="blog-content">
                     <section className="post-feed">
                         {posts.map(({ node }) => (
                             // The tag below includes the markup for each post - components/common/PostCard.js
