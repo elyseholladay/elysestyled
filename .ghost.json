@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://content.elysestyled.com",
-    "contentApiKey": "71c5d562b35ddd556d246643e7"
+    "apiUrl": "https://ghost.elysestyled.com",
+    "contentApiKey": "cfe39951515340551c8f341c06"
   },
   "production": {
-    "apiUrl": "https://content.elysestyled.com",
-    "contentApiKey": "71c5d562b35ddd556d246643e7"
+    "apiUrl": "https://ghost.elysestyled.com",
+    "contentApiKey": "cfe39951515340551c8f341c06"
   }
 }
