@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const posts = result.data.allGhostPost.edges
 
     // Load templates
-    const indexTemplate = path.resolve(`./src/templates/index.js`)
+    const blogTemplate = path.resolve(`./src/templates/blog.js`)
     const tagsTemplate = path.resolve(`./src/templates/tag.js`)
     const authorTemplate = path.resolve(`./src/templates/author.js`)
     const pageTemplate = path.resolve(`./src/templates/page.js`)
@@ -172,7 +172,7 @@ exports.createPages = async ({ graphql, actions }) => {
     posts.forEach(({ node }) => {
         // This part here defines, that our posts will use
         // a `/:slug/` permalink.
-        node.url = `/${node.slug}/`
+        node.url = `/blog/${node.slug}/`
 
         createPage({
             path: node.url,
@@ -190,12 +190,12 @@ exports.createPages = async ({ graphql, actions }) => {
         createPage,
         items: posts,
         itemsPerPage: postsPerPage,
-        component: indexTemplate,
+        component: blogTemplate,
         pathPrefix: ({ pageNumber }) => {
             if (pageNumber === 0) {
-                return `/`
+                return `/blog`
             } else {
-                return `/page`
+                return `/blog/page`
             }
         },
     })

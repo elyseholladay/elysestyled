@@ -18,9 +18,8 @@ import '../../styles/app.css'
  * styles, and meta data for each page.
  *
  */
-const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
+const DefaultLayout = ({ data, children, bodyClass }) => {
     const site = data.allGhostSettings.edges[0].node
-    const home = data.allGhostAuthor.edges[0].node
     
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
@@ -69,11 +68,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 }
 
                 <main className="site-main container">
-                    { isHome ?
-                        <Home data={home}></Home> :
-                        null
-                    }
-
                     {/* All the main content gets inserted here, index.js, post.js */}
                     {children}
                 </main>
@@ -100,7 +94,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 DefaultLayout.propTypes = {
     children: PropTypes.node.isRequired,
     bodyClass: PropTypes.string,
-    isHome: PropTypes.bool,
     data: PropTypes.shape({
         file: PropTypes.object,
         allGhostSettings: PropTypes.object.isRequired,
