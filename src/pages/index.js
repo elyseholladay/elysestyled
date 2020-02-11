@@ -15,7 +15,9 @@ const IndexPage = ({ data }) => {
                         I’m Elyse, and I’m a <Link to={'/style-coaching'}>personal style coach</Link>. I help people transform their everyday relationship with clothes, break free of negative body image and shopping habits, and uncover their singular style.
                     </p>
                     <p>
-                        Curious? I publish a <Link to={'/newsletter'}>monthly curated newsletter</Link> full of thoughtful prompts, questions, and inspiration to get you thinking critically about style, life, and self. 
+                        In Austin, Texas? Come join me for <Link to={'/workshops'}>a small group workshop</Link>, designed to get you thinking intentionally about your style and habits.
+
+
                     </p>
                 </div>
 
@@ -27,7 +29,10 @@ const IndexPage = ({ data }) => {
                         <h3>investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes. are you ready?</h3>
                     </div>
                 </div>
+            </div>
 
+            <div className="home-featured-blogs">
+                <h2 className="home-featured-blogs-title">On the Blog</h2>
                 <section className="post-feed">
                     {posts.map(({ node }) => (
                         // The tag below includes the markup for each post - components/common/PostCard.js

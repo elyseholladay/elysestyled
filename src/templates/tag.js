@@ -25,7 +25,7 @@ const Tag = ({ data, location, pageContext }) => {
             <Layout>
                 <div className="container">
                     <header className="tag-header">
-                        <h1>{tag.name}</h1>
+                        <h2>{tag.name}</h2>
                         {tag.description ? <p>{tag.description}</p> : null }
                     </header>
                     <section className="post-feed">
