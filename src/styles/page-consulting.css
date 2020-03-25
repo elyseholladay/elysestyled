@@ -1,0 +1,30 @@
+/* CONSULTING PAGE */
+.page-consulting {}
+
+/* hide page content title */
+.page-consulting .content-title { display: none; }
+
+.page-consulting h2:first-of-type {
+    color: var(--color-storm);
+}
+
+.page-consulting .content a {
+    text-decoration: none;
+    box-shadow: inset 0 -.65em 0 0 var(--color-marigold-light);
+    transition: box-shadow 250ms ease-in;
+}
+
+.page-consulting .content a:hover {
+    color: unset;
+    box-shadow: inset 0 -.65em 0 0 var(--color-marigold-mid);
+}
+
+.page-consulting .content {
+    padding: 2vh 0 10vh 0;
+}
+
+@media (min-width: 1200px) {
+    .page-consulting .content {
+        padding: 8vh 0 24vh;
+    }
+}
