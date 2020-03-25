@@ -17,12 +17,12 @@
 }
 
 .page-consulting .content {
-    padding: 2vh 6vw 10vh;
+    padding: 2vh 0 10vh;
 }
 
 @media (min-width: 1200px) {
     .page-consulting .content {
-        padding: 8vh 5vw 24vh;
+        padding: 8vh 0 24vh;
     }
 }
 
