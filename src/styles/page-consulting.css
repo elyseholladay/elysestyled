@@ -1,11 +1,8 @@
 /* CONSULTING PAGE */
 .page-consulting {}
 
-/* hide page content title */
-.page-consulting .content-title { display: none; }
-
-.page-consulting h2:first-of-type {
-    color: var(--color-storm);
+.page-consulting h1 {
+    margin-top: 2em;
 }
 
 .page-consulting .content a {
@@ -20,11 +17,16 @@
 }
 
 .page-consulting .content {
-    padding: 2vh 0 10vh 0;
+    padding: 2vh 6vw 10vh;
 }
 
 @media (min-width: 1200px) {
     .page-consulting .content {
-        padding: 8vh 0 24vh;
+        padding: 8vh 5vw 24vh;
     }
+}
+
+.page-consulting-bio {
+    width: 75%;
+    margin: 0 auto;
 }
