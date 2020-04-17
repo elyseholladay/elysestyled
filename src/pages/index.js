@@ -12,12 +12,11 @@ const IndexPage = ({ data }) => {
             <div className="home">
                 <div className="home-intro-text">
                     <p>
-                        I’m Elyse, and I’m a <Link to={'/style-coaching'}>personal style coach</Link>. I help people transform their everyday relationship with clothes, break free of negative body image and shopping habits, and uncover their singular style.
+                        I’m Elyse, and I’m a <Link to={'/style-coaching'}>personal style coach</Link>. I help people transform their everyday relationship with clothes, break free of negative body image and shopping habits, and uncover their singular style. <Link to={'/style-coaching'}>Let's turn your wardrobe dreams into actions.</Link>
                     </p>
                     <p>
-                        In Austin, Texas? Come join me for <Link to={'/workshops'}>a small group workshop</Link>, designed to get you thinking intentionally about your style and habits.
-
-
+                        Curious? Subscribe to my <a href='http://elysestyled.substack.com/about'>newsletter</a> for a weekly dose of exploration and inspiration to get you thinking critically about style, life, and self — or 
+                        follow along on Instagram <a href='http://instagram.com/elyseholladay'>@elyseholladay</a> for everyday outfits, style challenges, and my Six Style Questions video series.
                     </p>
                 </div>
 
