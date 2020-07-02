@@ -1,59 +1,23 @@
-/* Header
+/* HEADER AND SITE NAV
 /* ---------------------------------------------------------- */
 
 .site-head {
     padding: 4vmin 0 .5em 0;
 }
 
-/* only use for the entire site h1 */
-.site-head h1 {
-    font-size: 3.052em;
-}
-
-
-/* SITE MAST */
-
-.site-mast {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-@media (min-width: 500px) {
-    .site-mast {
-        align-items: center;
-        flex-direction: row;
-    }
-}
-
-/* contains the site title */
-.site-mast-left {}
-
-.site-mast-title h1 {
-    margin: 0;
-    padding: 0;
-    font-style: italic;
-    color: var(--color-navy);
-    transition: color 250ms ease-in;
-}
-
-.site-mast-title:hover h1 {
-    color: var(--color-agave);
-}
-
-/* contains the site nav */
-.site-mast-right {}
-
-/* SITE NAV */
-
 .site-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+}
+
+/*  don't underline the site header link or nav links */
+.site-nav a {
+    text-decoration: none;
 }
 
 .site-nav-item {
-    margin-right: 2em;
+    margin-right: 4em;
     white-space: nowrap; /* don't break nav item text */
 }
 
@@ -62,7 +26,7 @@
 }
 
 .site-nav-item {
-    font-family: var(--font-sans-serif);
+    font-family: "Founders Grotesk Text Test";
     font-weight: var(--font-medium);
     text-transform: uppercase;
     color: var(--color-navy);
@@ -72,6 +36,10 @@
 
 .site-nav-item:hover,
 .site-nav-item:focus {
+    color: var(--color-marigold);
+}
+
+.site-nav-item-home {
     color: var(--color-agave);
 }
 
@@ -79,14 +47,6 @@
 
 @media (max-width: 800px) {
     
-    .site-mast-title {
-        padding-top: 2.5em;
-        padding-bottom: 1em;
-    }
-    .site-mast-title h1 {
-        font-size: 2.441em;
-    }
-
     .site-nav-scroll-wrapper {
         background: var(--color-white);
         position: fixed;

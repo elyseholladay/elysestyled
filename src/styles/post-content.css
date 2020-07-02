@@ -35,7 +35,7 @@
 }
 
 .post-meta {
-    font-family: var(--font-sans-serif);
+    /* font-family: var(--font-sans-serif); */
     font-weight: var(--font-medium);
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--color-storm);
+    color: var(--color-navy);
 }
 
 @media (min-width: 0) {
@@ -59,7 +59,7 @@
 
 .post-excerpt {
     font-style: italic;
-    color: var(--color-storm);
+    color: var(--color-navy);
 }
 
 .post-title {

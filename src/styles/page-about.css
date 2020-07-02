@@ -5,7 +5,7 @@
 .page-about .content-title { display: none; }
 
 .page-about h2:first-of-type {
-    color: var(--color-storm);
+    color: var(--color-navy);
 }
 
 .page-about .content a {

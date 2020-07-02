@@ -28,7 +28,7 @@
 .post-card {}
 
 .post-card-header {
-    font-family: var(--font-sans-serif);
+    /* font-family: var(--font-sans-serif); */
     font-weight: var(--font-medium);
     text-transform: uppercase;
     letter-spacing: .5px;

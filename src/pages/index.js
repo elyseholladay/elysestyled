@@ -6,28 +6,26 @@ import { Layout, PostCard } from '../components/common'
 const IndexPage = ({ data }) => {
     const profile_image = data.allGhostAuthor.edges[0].node.profile_image
     const posts = data.allGhostPost.edges
+    // const about = data.allGhostPage.edges[3].node.html
 
     return (
         <Layout>
             <div className="home">
                 <div className="home-intro-text">
-                    <p>
-                        I’m Elyse, and I’m a <Link to={'/style-coaching'}>personal style coach</Link>. I help people transform their everyday relationship with clothes, break free of negative body image and shopping habits, and uncover their singular style. <Link to={'/style-coaching'}>Let's turn your wardrobe dreams into actions.</Link>
-                    </p>
-                    <p>
-                        Curious? Subscribe to my <a href='http://elysestyled.substack.com/about'>newsletter</a> for a weekly dose of exploration and inspiration to get you thinking critically about style, life, and self — or 
-                        follow along on Instagram <a href='http://instagram.com/elyseholladay'>@elyseholladay</a> for everyday outfits, style challenges, and my Six Style Questions video series.
-                    </p>
+                    are you ready to turn your wardrobe dreams into actions, commit to a more socially responsible wardrobe, & uncover your singular style?
                 </div>
+            </div>
 
-                <div className="home-mission">
-                    <div className="home-mission-image">
-                        {profile_image && <img src={profile_image} alt="photo of Elyse" />}
-                    </div>
-                    <div className="home-mission-text">
-                        <h3>investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes. are you ready?</h3>
-                    </div>
-                </div>
+            <div>
+                <h2>group class</h2>
+                <p>Committed to a more socially responsible wardrobe, but don’t know how to begin turning your values into actions, shopping habits, and stick to it?</p>
+                <p>Get in the Class!</p>
+            </div>
+
+            <div>
+                <h2>style coaching</h2>
+                <p>Style Coaching provides the one-on-one attention and insights you need to transform your relationship to your wardrobe. Six month packages for personalized work, or if you don’t know where to begin and you’re overwhelmed and need immediate wardrobe support, sign up for a one-hour pay-what-you’re-able strategy call.</p>
+                <p>Book a Discovery Call today to see what style coaching is all about.</p>
             </div>
 
             <div className="home-featured-blogs">
@@ -48,6 +46,7 @@ IndexPage.propTypes = {
     data: PropTypes.shape({
         allGhostAuthor: PropTypes.object.isRequired,
         allGhostPost: PropTypes.object.isRequired,
+        allGhostPage: PropTypes.object.isRequired
     }).isRequired,
 }
 
@@ -67,6 +66,14 @@ const IndexQuery = props => (
                         node {
                             ...GhostAuthorFields
                         }
+                    }
+                }
+                allGhostPage {
+                    edges {
+                      node {
+                        title
+                        plaintext
+                      }
                     }
                 }
             }

@@ -18,7 +18,7 @@ import '../../styles/app.css'
  * styles, and meta data for each page.
  *
  */
-const DefaultLayout = ({ data, children, bodyClass }) => {
+const DefaultLayout = ({ data, children }) => {
     const site = data.allGhostSettings.edges[0].node
     
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
@@ -32,43 +32,24 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
                 <script type="text/javascript">
                     {site.codeinjection_head}
                 </script>
-                <body className={bodyClass} />
+                <body/>
             </Helmet>
 
             <div className="viewport">
-
                 {/* The main header section on top of the screen */}
                 <header className="site-head">
                     <div className="container">
-                        <div className="site-mast">
-                            <Link to="/" className="site-mast-title">
-                                <h1>{site.title}</h1>
-                            </Link>
-                            <div className="site-nav-scroll-wrapper">
-                                <nav className="site-nav">
-                                    {/* The navigation items as setup in Ghost */}
-                                    <Navigation data={site.navigation} navClass="site-nav-item" />
-                                    { <a href="https://www.instagram.com/elyseholladay/" className="site-nav-item icon-a11y" target="_blank" rel="noopener noreferrer">
-                                        <span className="icon-instagram" aria-hidden="true"></span>
-                                            <span className="screen-reader-text">Instagram</span>
-                                    </a>}
-                                </nav>
-                            </div>
+                        <div className="site-nav-scroll-wrapper">
+                            <nav className="site-nav">
+                                <Link to="/" className="site-nav-item site-nav-item-home">
+                                    {site.title}
+                                </Link>
+                                {/* The navigation items as setup in Ghost */}
+                                <Navigation data={site.navigation} navClass="site-nav-item" />
+                            </nav>
                         </div>
-                        { bodyClass=="page-style-coaching" ? 
-                            <div className="page-style-coaching-tagline">
-                                investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes.
-                            </div> :
-                            null 
-                        }
                     </div>
                 </header>
-
-                { bodyClass=="page-style-coaching" ?
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.001 226.783">
-                            <path data-name="site-head-curve-svg" className="site-head-curve" d="M0 194.669V-.005h1920v3.538C1454.7 151.21 969.7 226.791 507.8 226.778c-173.253 0-343.364-10.645-507.8-32.109z" />
-                        </svg> : null
-                }
 
                 <main className="site-main container">
                     {/* All the main content gets inserted here, index.js, post.js */}
@@ -96,7 +77,6 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
 
 DefaultLayout.propTypes = {
     children: PropTypes.node.isRequired,
-    bodyClass: PropTypes.string,
     data: PropTypes.shape({
         file: PropTypes.object,
         allGhostSettings: PropTypes.object.isRequired,
