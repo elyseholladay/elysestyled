@@ -41,6 +41,7 @@ const Page = ({ data, location }) => {
                         </div>
                         : null
                     }
+
                     <section
                         className="content-body load-external-scripts"
                         dangerouslySetInnerHTML={{ __html: page.html }}

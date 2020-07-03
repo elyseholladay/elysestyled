@@ -6,14 +6,12 @@ import { Tags } from '@tryghost/helpers-gatsby'
 const WorksheetsPosts = ({ post }) => {
     const url = `/blog/${post.slug}/`
 
-    return (
-        <div className="worksheet-posts">
-            <div className="worksheet-posts-main">
-                <h5 className="worksheet-posts-title">
-                    📝 <Link to={url}>{post.title}</Link>
-                </h5>
-            </div>
-            <section className="worksheet-posts-excerpt">{post.excerpt}</section>
+return (
+        <div className="worksheet">
+            <h5 className="worksheet-title">
+                📝 <Link to={url}>{post.title}</Link>
+            </h5>
+            <section className="worksheet-excerpt">{post.excerpt}</section>
         </div>
     )
 }

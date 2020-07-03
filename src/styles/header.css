@@ -11,6 +11,13 @@
     justify-content: flex-start;
 }
 
+@media (max-width: 800px) {
+    .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
 /*  don't underline the site header link or nav links */
 .site-nav a {
     text-decoration: none;
@@ -40,53 +47,4 @@
 
 .site-nav-item-home {
     color: var(--color-agave);
-}
-
-/* RESPONSIVE SITE NAV SIDE SCROLL */
-
-/* @media (max-width: 800px) {
-    
-    .site-nav-scroll-wrapper {
-        background: var(--color-white);
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1000;
-        padding: 0 6vw;
-    }
-
-    .site-nav {
-        position: relative;
-        z-index: 100;
-        min-height: 52px;
-        padding: 0 2vw;
-        font-size: 1.3em;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
-        -ms-overflow-scrolling: touch;
-    }
-
-    .site-nav-item {
-        margin-right: 2em;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 800px) {
-    .site-nav-scroll-wrapper {
-        padding-top: .45em 0 .25em 0;
-    }
-    .site-nav {
-        font-size: 1.1em;
-    }
-} */
-
-
-@media (max-width: 800px) {
-    .site-nav {
-        align-items: flex-start;
-        flex-direction: column;
-    }
 }

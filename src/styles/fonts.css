@@ -3,36 +3,45 @@
 /* FONT-FACE DEFINITIONS --------------------------------------------------- */
 /* ------------------------------------------------------------------------- */
 
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2020 Colophon Foundry
+ *
+ * Licenced to Elyse Holladay 
+ */
 
-/* @font-face {
-    font-family: 'Tiempos Text';
-    src: url('../fonts/tiempos/TiemposText-BoldItalic.woff') format('woff');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Tiempos Text';
-    src: url('../fonts/tiempos/TiemposText-Bold.woff') format('woff');
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'Tiempos Text';
-    src: url('../fonts/tiempos/TiemposTextWeb-Regular.woff2') format('woff2'), url('../fonts/tiempos/TiemposTextWeb-Regular.woff') format('woff');
-    font-weight: 400;
+ @font-face {
+    font-family: 'Nib';
+    src: url('../fonts/nib/nib-semibold.eot');
+    src: url('../fonts/nib/nib-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nib/nib-semibold.woff2') format('woff2'),
+         url('../fonts/nib/nib-semibold.woff') format('woff'),
+         url('../fonts/nib/nib-semibold.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Tiempos Text';
-    src: url('../fonts/tiempos/TiemposTextWeb-RegularItalic.woff2') format('woff2'), url('../fonts/tiempos/TiemposTextWeb-RegularItalic.woff') format('woff');
-    font-weight: 400;
+    font-family: 'Nib';
+    src: url('../fonts/nib/nib-semibold-italic.eot');
+    src: url('../fonts/nib/nib-semibold-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nib/nib-semibold-italic.woff2') format('woff2'),
+         url('../fonts/nib/nib-semibold-italic.woff') format('woff'),
+         url('../fonts/nib/nib-semibold-italic.ttf') format('truetype');
+    font-weight: normal;
     font-style: italic;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
- */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+
 
 /* ------------------------------------------------------------------------- */
 /* ICOMOON ----------------------------------------------------------------- */

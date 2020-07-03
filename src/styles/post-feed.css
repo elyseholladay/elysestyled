@@ -1,11 +1,6 @@
 /* HOMEPAGE POST FEED
 /* ---------------------------------------------------------- */
 
-/* POST FEED GRID */
-.post-feed {
-    /* max-width: 60%; */
-}
-
 
 /* POST CARD */
 .post-card {
@@ -23,20 +18,19 @@
     display: none;
 }
 
-.post-card-image {}
+.post-card-image {
+    margin-bottom: 1em;
+}
 
 /* this element is also a link wrapper around the image and title */
 .post-card-main {
     display: block;
 }
 
-.post-card-title {
-    /* font-size: 2.3em; */
-    /* font-style: italic; */
-    /* margin: 0 0 .5em 0; */
-    /* transition: color 250ms ease-in; */
+.post-card-title { color: inherit; }
+
+.post-card-excerpt {
+    margin-bottom: 1em;
 }
 
-.post-card-main:hover .post-card-title {
-    /* color: var(--color-marigold); */
-}
+.post-card-image-wrapper { width: 80%; }

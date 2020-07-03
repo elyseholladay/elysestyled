@@ -23,20 +23,22 @@ const PostCard = ({ post }) => {
             </header>
             
             <Link to={url} className="post-card-main">
-                <h3 className="post-card-title">
+                <h2 className="post-card-title">
                     {post.title}
-                </h3>
+                </h2>
+            </Link>
+                <section className="post-card-excerpt">{post.excerpt}</section>
                     
                 <div className="post-card-image-wrapper">
+            <Link to={url}>
                 {post.feature_image &&
                     <div className="post-card-image">
                         <img src={post.feature_image}/>
                     </div>
                 }
+                </Link>
                 </div>
-            </Link>
 
-            <section className="post-card-excerpt">{post.excerpt}</section>
         </div>
     )
 }

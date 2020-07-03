@@ -28,27 +28,23 @@ const IndexPage = ({ data }) => {
                 </div>
         
                 <div className="offerings content container">
-                <h1 id="heading-1">h1 page titles</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h2 id="heading-2">h2 blog post and card titles, section titles</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h3 id="heading-3">h3 content titles</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h4 id="heading-4">h4 text headers</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h5 id="heading-5">h5 text subheaders</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h6 id="heading-6">h6 text copy bold headers</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    {/* <h2>Wardrobe Freedom Course</h2>
-                    <p>Committed to a more socially responsible wardrobe, but don’t know how to begin turning your values into actions, shopping habits, and stick to it?</p>
-                    <a href="#">Sign up today for courses beginning July 15!</a> */}
+                    <div className="offerings-group">
+                        <h3><a href="/course">Socially Responsible Style Course</a></h3>
+                        <p>Committed to a more socially responsible wardrobe, but don’t know how to begin changing your shopping habits? This one-day online group course is designed specifically to help you name your shopping values and create a thoughtful wishlist system that really works... with friends! Want to be first to know when signups open?</p>
+                        <div className="form-wrapper">
+                            <ConvertKitForm formId="1489882" submitText="Let me know!" />
+                        </div>
+                    </div>
                 
-
-                    <h2>One-on-One Style Coaching</h2>
-                    <p>Style Coaching provides the one-on-one attention and insights you need to transform your relationship to your wardrobe. We'll dig deep into wardrobe science, using your real habits to understand what you already wear and like, and then creatively explore where you want to be in the future. Using journaling prompts and exercises, you’ll reflect on your values, identity, and how you present yourself to the world.</p>
-                    <a href="#">Book a Discovery Call today to see what style coaching is all about.</a>
+                    <div className="offerings-group">
+                        <h3><a href="/style-coaching">Personal Style Coaching</a></h3>
+                        <p>Style Coaching is a six-month, completely custom, wardrobe reset. We'll dig deep into your wardrobe dreams, using your real habits to understand what you already wear and how you shop, and creatively explore where you want to be in the future. Using journaling prompts and exercises, you’ll reflect on your values, come up with your very own style words, & plan for future wardrobe satisfaction.</p>
+                        {/* <p><a href="#" className="link-highlight">Book your Discovery Call.</a></p> */}
+                        <div className="form-wrapper">
+                            <a href="https://app.acuityscheduling.com/schedule.php?owner=17965065" target="_blank" className="acuity-embed-button">Schedule Appointment</a>
+                            <script src="https://embed.acuityscheduling.com/embed/button/17965065.js" async></script>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -66,20 +62,19 @@ const IndexPage = ({ data }) => {
 
             <div className="worksheets content container">
                 <h3 className="worksheets-title">resources & worksheets</h3>
-                <p>Resources and worksheets — totally free! — to help you get started thinking critically about your wardrobe.</p>
+                <p>My secret to help you get started thinking critically about your wardrobe? Thoughtful questions and guided worksheets. Get new worksheets right in your inbox to stay curious, accountable, and motivated to improve your relationship with your clothes.</p>
 
-                <p className="call-to-action">Get new worksheets in your inbox to keep you on track.</p>
+                <div className="form-wrapper">
+                    <ConvertKitForm formId="1503630" />
+                </div>
 
-                <ConvertKitForm formId="1503630" />
-
-                <section className="worksheets-feed">
+                <div className="worksheets-feed">
                     {posts.map(({ node }) => (
                         // The tag below includes the markup for each post - components/common/WorksheetsPosts.js
                         <WorksheetsPosts key={node.id} post={node} />
                     ))}
-                </section>
+                </div>
             </div>
-
 
             <div className="statement">
                 <p className="container content">investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes. are you ready?</p>

@@ -2,14 +2,17 @@
 /* ---------------------------------------------------------- */
 @import 'bookmarks.css';
 
+.page-feature-image {
+    margin: 2em 0 4em;
+}
+
 .kg-card {
-    margin: 2em 0 3em;
+    margin: 3em 0 4em;
 }
 
 /* IMAGES */
 
 .kg-image-card {
-    margin: 4em 0 2em 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -43,7 +46,9 @@
 
 /* GALLERY */
 
-.kg-gallery-card {}
+.kg-gallery-card {
+    margin: 2em 0 4em;
+}
 
 .kg-gallery-container {
     display: flex;
@@ -94,7 +99,9 @@
 /* CONVERTKIT OVERRIDE STYLES */
 .formkit-form {
     margin-top: 4em;
+    margin-bottom: 4em;
     border: none !important;
+    box-shadow: none !important;
 }
 
 .formkit-form [data-style="minimal"] {

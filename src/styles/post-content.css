@@ -6,13 +6,9 @@
 
 .post-feature-image {
     margin-bottom: 2em;
-    /* display: none; */
 }
 
-/* POST HEADER */
-.post-header {
-    margin-bottom: 2em;
-}
+.post-header {}
 
 .post-meta {
     font-family: var(--font-sans-serif);
@@ -21,12 +17,4 @@
     margin-bottom: 1em;
     color: var(--color-agave);
     font-size: .6em;
-}
-
-/* only post titles, not other h1s */
-.post-title {
-    /* color: var(--color-marigold);
-    font-style: italic;
-    font-family: var(--font-serif);
-    font-weight: var(--font-normal); */
 }

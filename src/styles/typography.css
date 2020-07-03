@@ -40,25 +40,19 @@ h1 {
 }
 
 h2 {
-    margin: 0.5em 0;
-    color: var(--color-navy);
-    font-size: 1.33em;
+    margin: 0 0 0.5em 0;
+    font-size: 2em;
+    font-style: italic;
+    white-space: break-spaces;
 }
 
-/* page second header + homepage highlight — don't use h2s in text! */
-/* .content-page h2:first-of-type,
-.highlight-text {
-    margin-bottom: 2vh;
-    color: var(--color-navy);
-    font-family: var(--font-serif);
-    font-weight: var(--font-normal);
-    font-style: italic;
-    font-size: 2em;
-    line-height: 1.2;
-    white-space: break-spaces;
-} */
-
 h3 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.33em;
+    font-weight: var(--font-normal);
+}
+
+h4 {
     margin: 1.75em 0 0.5em 0;
     font-size: 1.1em;
     font-weight: var(--font-bold);
@@ -66,7 +60,7 @@ h3 {
     color: var(--color-offblack);
 }
 
-h4, h5 {
+h5 {
     margin: 1.5em 0 .5em 0;
     font-size: 1em;
     font-family: var(--font-sans-serif);
@@ -81,54 +75,33 @@ h6 {
     color: var(--color-greige);
 }
 
-
-/* .call-to-action {
-    display: inline-block;
-    color: var(--color-navy);
-    box-shadow: inset 0 -.8em 0 0 var(--color-agave-light);
-    line-height: 1.2;
-    font-family: var(--font-serif);
-    font-weight: var(--font-bold);
-    font-style: italic;
-    font-size: 0.8em;
-} */
-
 strong {}
 
-/* .link-highlight {
+.link-highlight {
     display: inline;
     color: var(--color-navy);
     font-family: var(--font-serif);
     font-weight: var(--font-bold);
     font-style: italic;
     font-size: 0.88em;
+    letter-spacing: .2px;
     text-decoration-color: var(--color-agave);
 }
 
-.about .link-highlight {
-    color: var(--color-white);
-}
-
-.about .link-highlight:hover {
-    color: var(--color-agave);
-    text-decoration-color: var(--color-agave-light);
-} */
-
-/* blockquote {
+blockquote {
     margin: 1em 0;
     line-height: 1.4;
     font-size: 1.2em;
-    font-weight: var(--font-bold);
-    font-style: italic;
+    color: var(--color-cactus);
     font-family: var(--font-serif);
-    color: var(--color-rose);
-} */
+}
 
 a {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
     text-decoration-skip-ink: auto;
     color: var(--color-navy);
-    text-decoration-color: var(--color-agave);
+    text-decoration-color: var(--color-agave-light);
     transition: color 250ms ease-in, text-decoration-color 250ms ease-in;
 }
 
