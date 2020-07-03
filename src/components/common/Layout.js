@@ -58,14 +58,8 @@ const DefaultLayout = ({ data, children }) => {
 
                 <footer className="footer">
                     <div className="footer-nav container">
-                        <div className="footer-nav-left">
-                            <em>
-                                we become what we think about all the time
-                            </em>
-                        </div>
-                        <div className="footer-nav-right">
-                            <Navigation data={site.navigation} navClass="footer-nav-item" />
-                        </div>
+                        <Navigation data={site.navigation} navClass="footer-nav-item" />
+                        <p className="copyright">© 2020 ELYSE HOLLADAY</p>
                     </div>
                 </footer>
 

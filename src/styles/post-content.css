@@ -6,12 +6,12 @@
 
 .post-feature-image {
     margin-bottom: 6em;
+    display: none;
 }
 
 /* POST HEADER */
 .post-header {
-    border-bottom: 2px solid var(--color-vanilla);
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 .post-meta {
@@ -19,8 +19,8 @@
     font-weight: var(--font-medium);
     text-transform: uppercase;
     margin-bottom: 1em;
-    color: var(--color-greige);
-    font-size: .65em;
+    color: var(--color-agave);
+    font-size: .6em;
 }
 
 /* only post titles, not other h1s */
@@ -28,5 +28,5 @@
     color: var(--color-marigold);
     font-style: italic;
     font-family: var(--font-serif);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-normal);
 }

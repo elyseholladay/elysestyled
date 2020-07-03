@@ -3,6 +3,7 @@
 
 .home {
     padding: 2vh 0 4vh 0;
+    max-width: 80%;
 }
 
 @media (min-width: 1200px) {
@@ -14,3 +15,4 @@
 .home h2 {
     font-weight: var(--font-bold);
 }
+
