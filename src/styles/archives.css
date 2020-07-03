@@ -3,14 +3,15 @@
 
 .tag-header,
 .author-header {
-    margin: 4vh 0;
-    padding-bottom: 4vh;
-    border-bottom: 2px solid var(--color-agave);
+    margin: 2vw 0;
+    padding-bottom: 2vw;
+    border-bottom: 2px solid var(--color-agave-light);
 }
 
 .tag-header h2,
 .author-header h2 {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1em 0;
+    text-transform: lowercase;
     color: var(--color-marigold);
 }
 
@@ -21,6 +22,7 @@
 .author-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .author-header-image {

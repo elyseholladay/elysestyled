@@ -19,9 +19,9 @@ hr {
     display: block;
     width: 100%;
     padding: 0;
-    height: 2px;
+    height: 10px;
     border: 0;
-    border-top: 2px solid var(--color-agave);
+    border-top: 2px solid var(--color-agave-light);
 }
 
 audio,
@@ -78,21 +78,22 @@ img {
 .viewport {}
 
 .container {
-    max-width: 1000px;
-    width: 85vw;
-    margin: 0 auto; 
+    margin: 0 3vw;
 }
 
+@media (min-width: 801px) {
+    .container.content {
+        width: 82vw;
+    }
+}
 
+@media (min-width: 1045px) {
+    .container.content {
+        width: 55vw;
+    }
+}
 
 /* 404 */
-
 .page-404 {
-    padding: 2vh 0 10vh 0;
-}
-
-@media (min-width: 1200px) {
-    .page-404 {
-        padding: 8vh 0 24vh;
-    }
+    padding: 0 0 10vw 0;
 }

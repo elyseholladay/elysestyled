@@ -23,9 +23,9 @@ const Tag = ({ data, location, pageContext }) => {
                 type="series"
             />
             <Layout>
-                <div className="container">
+                <div className="container content">
                     <header className="tag-header">
-                        <h2>{tag.name}</h2>
+                        <h1>{tag.name} archives</h1>
                         {tag.description ? <p>{tag.description}</p> : null }
                     </header>
                     <section className="post-feed">

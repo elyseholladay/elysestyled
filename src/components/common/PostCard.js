@@ -12,27 +12,33 @@ const PostCard = ({ post }) => {
     return (
         <div className="post-card">
             <header className="post-card-header">
-                <div className="post-card-date">{date}</div>
-                {post.tags && <div className="post-card-tags">
+                <div className="post-meta">
+                    <div className="post-date-time">
+                        {date} · {readingTime}
+                    </div>
+                </div>
+                {/* {post.tags && <div className="post-card-tags">
                     <Tags post={post} visibility="public" autolink={false}/>
-                </div>}
-                <div className="post-card-readingtime">{readingTime}</div>
+                </div>} */}
             </header>
             
             <Link to={url} className="post-card-main">
+                <h2 className="post-card-title">
+                    {post.title}
+                </h2>
+            </Link>
+                <section className="post-card-excerpt">{post.excerpt}</section>
+                    
                 <div className="post-card-image-wrapper">
+            <Link to={url}>
                 {post.feature_image &&
-                    <div className="post-card-image" style={{ backgroundImage: `url(${post.feature_image})` ,
-                    }}></div>
+                    <div className="post-card-image">
+                        <img src={post.feature_image}/>
+                    </div>
                 }
+                </Link>
                 </div>
 
-                <h6 className="post-card-title">
-                    {post.title}
-                </h6>
-            </Link>
-
-            <section className="post-card-excerpt">{post.excerpt}</section>
         </div>
     )
 }

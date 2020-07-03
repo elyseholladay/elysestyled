@@ -3,8 +3,8 @@ module.exports = {
 
     postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
-    siteTitleMeta: `Elyse Styled`, // This allows an alternative site title for meta data for pages.
-    siteDescriptionMeta: `style coaching • personal style diary • curated wardrobe • ethical fashion • intentional living`, // This allows an alternative site description for meta data for pages.
+    siteTitleMeta: `Personal Style Coaching | Elyse Styled`, // This allows an alternative site title for meta data for pages.
+    siteDescriptionMeta: `personal style coaching and group courses to transform your relationship with clothes`, // This allows an alternative site description for meta data for pages.
 
     shareImageWidth: 1000, // Change to the width of your default share image
     shareImageHeight: 523, // Change to the height of your default share image
