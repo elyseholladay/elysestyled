@@ -29,8 +29,7 @@ const Page = ({ data, location }) => {
                 <style type="text/css">{`${page.codeinjection_styles}`}</style>
             </Helmet>
             <Layout>
-            <article className="content content-page">
-                
+                <article className="content content-page container">
                     <h1 className="content-title">{page.title}</h1>
                 
                     {/* The main page content */}

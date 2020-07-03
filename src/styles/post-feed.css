@@ -3,7 +3,7 @@
 
 /* POST FEED GRID */
 .post-feed {
-    max-width: 60%;
+    /* max-width: 60%; */
 }
 
 
@@ -23,14 +23,7 @@
     display: none;
 }
 
-.post-card-image {
-    margin: 0 0 1em 0;
-    width: auto;
-    height: 420px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-}
+.post-card-image {}
 
 /* this element is also a link wrapper around the image and title */
 .post-card-main {

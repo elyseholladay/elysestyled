@@ -94,9 +94,29 @@ h6 {
     font-family: var(--font-serif);
     font-weight: var(--font-bold);
     font-style: italic;
+    font-size: 0.8em;
 }
 
 strong {}
+
+.link-highlight {
+    display: inline;
+    color: var(--color-navy);
+    font-family: var(--font-serif);
+    font-weight: var(--font-bold);
+    font-style: italic;
+    font-size: 0.88em;
+    text-decoration-color: var(--color-agave);
+}
+
+.about .link-highlight {
+    color: var(--color-white);
+}
+
+.about .link-highlight:hover {
+    color: var(--color-agave);
+    text-decoration-color: var(--color-agave-light);
+}
 
 blockquote {
     margin: 1em 0;

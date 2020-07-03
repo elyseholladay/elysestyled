@@ -38,19 +38,17 @@ const DefaultLayout = ({ data, children }) => {
                 {/* The main header section on top of the screen */}
                 <header className="site-head">
                     <div className="container">
-                        <div className="site-nav-scroll-wrapper">
-                            <nav className="site-nav">
-                                <Link to="/" className="site-nav-item site-nav-item-home">
-                                    {site.title}
-                                </Link>
-                                {/* The navigation items as setup in Ghost */}
-                                <Navigation data={site.navigation} navClass="site-nav-item" />
-                            </nav>
-                        </div>
+                        <nav className="site-nav">
+                            <Link to="/" className="site-nav-item site-nav-item-home">
+                                {site.title}
+                            </Link>
+                            {/* The navigation items as setup in Ghost */}
+                            <Navigation data={site.navigation} navClass="site-nav-item" />
+                        </nav>
                     </div>
                 </header>
 
-                <main className="site-main container">
+                <main className="site-main">
                     {/* All the main content gets inserted here, index.js, post.js */}
                     {children}
                 </main>

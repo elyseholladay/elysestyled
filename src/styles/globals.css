@@ -78,39 +78,19 @@ img {
 .viewport {}
 
 .container {
-    width: 82vw;
-    max-width: 1200px;
-    margin: 0 0 0 3vw;
+    margin: 0 3vw;
 }
 
-.content {
-    margin-top: 2em;
-}
-
-@media (min-width: 800px) {
-    .post-full-content {
-        max-width: 88%;
+@media (min-width: 801px) {
+    .container.content {
+        width: 82vw;
     }
 }
 
-@media (min-width: 1000px) {
-    .post-full-content {
-        max-width: 80%;
+@media (min-width: 1045px) {
+    .container.content {
+        width: 55vw;
     }
-}
-
-@media (min-width: 1300px) {
-    .post-full-content {
-        max-width: 60%;
-    }
-}
-
-.content-page {
-    margin-bottom: 6vw;
-}
-
-.content-page .content-body {
-    max-width: 80%;
 }
 
 /* 404 */

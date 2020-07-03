@@ -29,8 +29,9 @@ const PostCard = ({ post }) => {
                     
                 <div className="post-card-image-wrapper">
                 {post.feature_image &&
-                    <div className="post-card-image" style={{ backgroundImage: `url(${post.feature_image})` ,
-                    }}></div>
+                    <div className="post-card-image">
+                        <img src={post.feature_image}/>
+                    </div>
                 }
                 </div>
             </Link>

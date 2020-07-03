@@ -33,7 +33,7 @@ const Post = ({ data, location }) => {
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet>
             <Layout>
-                <article className="content post">
+                <article className="content content-post container">
                     <div className="post-header">
                         <div className="post-meta">
                             <div className="post-date-time">
