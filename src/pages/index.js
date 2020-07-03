@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
                         <h3><a href="/course">Socially Responsible Style Course</a></h3>
                         <p>Committed to a more socially responsible wardrobe, but don’t know how to begin changing your shopping habits? This one-day online group course is designed specifically to help you name your shopping values and create a thoughtful wishlist system that really works... with friends! Want to be first to know when signups open?</p>
                         <div className="form-wrapper">
-                            <ConvertKitForm formId="1489882" submitText="Let me know!" />
+                            <ConvertKitForm formId="1489882" template="minimal"/>
                         </div>
                     </div>
                 
@@ -62,10 +62,10 @@ const IndexPage = ({ data }) => {
 
             <div className="worksheets content container">
                 <h3 className="worksheets-title">resources & worksheets</h3>
-                <p>My secret to help you get started thinking critically about your wardrobe? Thoughtful questions and guided worksheets. Get new worksheets right in your inbox to stay curious, accountable, and motivated to improve your relationship with your clothes.</p>
+                <p>My secret to help you get started thinking critically about your wardrobe? Thoughtful prompts and guided worksheets. Get new worksheets right in your inbox to stay curious, accountable, and motivated to improve your relationship with your clothes.</p>
 
                 <div className="form-wrapper">
-                    <ConvertKitForm formId="1503630" />
+                    <ConvertKitForm formId="1503630" template="minimal" />
                 </div>
 
                 <div className="worksheets-feed">
