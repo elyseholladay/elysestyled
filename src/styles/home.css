@@ -16,3 +16,14 @@
     font-weight: var(--font-bold);
 }
 
+.highlight {
+    position: relative;
+    margin-bottom: 6em;
+}
+
+.highlight-shape {
+    position: absolute;
+    z-index: -1;
+    left: -107px;
+    top: -60px;
+}
