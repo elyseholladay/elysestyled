@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ConvertKitForm from 'convertkit-react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { Layout, WorksheetsPosts } from '../components/common'
 
@@ -24,17 +25,19 @@ const IndexPage = ({ data }) => {
                 </div>
         
                 <div>
-                    <h2>group class</h2>
+                    <h2>Wardrobe Freedom Course</h2>
                     <p>Committed to a more socially responsible wardrobe, but don’t know how to begin turning your values into actions, shopping habits, and stick to it?</p>
-                    <p>Get in the Class!</p>
+                    <a href="#">Sign up today for courses beginning July 15!</a>
                 </div>
 
                 <div>
-                    <h2>style coaching</h2>
-                    <p>Style Coaching provides the one-on-one attention and insights you need to transform your relationship to your wardrobe. Six month packages for personalized work, or if you don’t know where to begin and you’re overwhelmed and need immediate wardrobe support, sign up for a one-hour pay-what-you’re-able strategy call.</p>
-                    <p>Book a Discovery Call today to see what style coaching is all about.</p>
+                    <h2>One-on-One Style Coaching</h2>
+                    <p>Style Coaching provides the one-on-one attention and insights you need to transform your relationship to your wardrobe. We'll dig deep into wardrobe science, using your real habits to understand what you already wear and like, and then creatively explore where you want to be in the future. Using journaling prompts and exercises, you’ll reflect on your values, identity, and how you present yourself to the world.</p>
+                    <a href="#">Book a Discovery Call today to see what style coaching is all about.</a>
                 </div>
             </div>
+
+            <ConvertKitForm formId="1503630" />
 
             <div className="home-featured-blogs">
                 <h3 className="home-featured-blogs-title">resources & worksheets</h3>
