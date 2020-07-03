@@ -16,7 +16,7 @@
     font-weight: var(--font-bold);
 }
 
-.highlight {
+/* .highlight {
     position: relative;
     margin-bottom: 6em;
 }
@@ -26,4 +26,4 @@
     z-index: -1;
     left: -107px;
     top: -60px;
-}
+} */
