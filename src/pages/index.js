@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import { Layout, PostCard } from '../components/common'
+import { Layout, WorksheetsPosts } from '../components/common'
 
 const IndexPage = ({ data }) => {
     const profile_image = data.allGhostAuthor.edges[0].node.profile_image
@@ -37,11 +37,11 @@ const IndexPage = ({ data }) => {
             </div>
 
             <div className="home-featured-blogs">
-                <h2 className="home-featured-blogs-title">On the Blog</h2>
+                <h3 className="home-featured-blogs-title">resources & worksheets</h3>
                 <section className="post-feed">
                     {posts.map(({ node }) => (
-                        // The tag below includes the markup for each post - components/common/PostCard.js
-                        <PostCard key={node.id} post={node} />
+                        // The tag below includes the markup for each post - components/common/WorksheetsPosts.js
+                        <WorksheetsPosts key={node.id} post={node} />
                     ))}
                 </section>
             </div>

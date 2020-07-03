@@ -16,14 +16,31 @@
     font-weight: var(--font-bold);
 }
 
-/* .highlight {
-    position: relative;
+.highlight {
     margin-bottom: 6em;
 }
 
+/*
 .highlight-shape {
     position: absolute;
     z-index: -1;
     left: -107px;
     top: -60px;
 } */
+
+
+
+/* WORKSHEETS LIST */
+.worksheet-posts {}
+
+.worksheet-posts-main {}
+
+.worksheet-posts-title {
+    margin-bottom: 0;
+}
+
+.worksheet-posts-title a {
+    text-decoration: underline;
+}
+
+.worksheet-posts-excerpt {}
