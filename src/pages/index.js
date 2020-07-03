@@ -37,11 +37,16 @@ const IndexPage = ({ data }) => {
                 </div>
             </div>
 
-            <ConvertKitForm formId="1503630" />
 
-            <div className="home-featured-blogs">
-                <h3 className="home-featured-blogs-title">resources & worksheets</h3>
-                <section className="post-feed">
+            <div className="worksheets">
+                <h3 className="worksheets-title">resources & worksheets</h3>
+                <p>Free resources and worksheets to get you started.</p>
+
+                <p className="call-to-action">Sign up to get new worksheets right in your inbox.</p>
+
+                <ConvertKitForm formId="1503630" />
+
+                <section className="worksheets-feed">
                     {posts.map(({ node }) => (
                         // The tag below includes the markup for each post - components/common/WorksheetsPosts.js
                         <WorksheetsPosts key={node.id} post={node} />
