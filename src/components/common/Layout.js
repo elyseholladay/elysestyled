@@ -35,7 +35,6 @@ const DefaultLayout = ({ data, children }) => {
             </Helmet>
 
             <div className="viewport">
-                {/* The main header section on top of the screen */}
                 <header className="site-head">
                     <div className="container">
                         <nav className="site-nav">
