@@ -1,0 +1,35 @@
+/* FORMS */
+
+input {
+    padding: 10px;
+    font-size: .65rem;
+    text-transform: capitalize;
+    line-height: 1.5;
+    color: var(--color-greige);
+    background-color: var(--color-white);
+    background-clip: padding-box;
+    border: 1px solid var(--color-greige);
+    border-radius: .25em;
+    margin-right: 12px;
+    border-radius: 2px;
+}
+
+button {
+    background-color: var(--color-marigold);
+    color: var(--color-white);
+    padding: 10px 25px;
+    border-radius: 2px;
+    line-height: 1.5;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all 500ms;
+    border: 1px solid var(--color-marigold);
+    text-transform: uppercase;
+    font-weight: var(--font-medium);
+}
+
+button:hover {
+   background-color: var(--color-cactus);
+   border: 1px solid var(--color-cactus);
+}

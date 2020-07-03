@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import ConvertKitForm from 'convertkit-react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { Layout, WorksheetsPosts } from '../components/common'
+import Img from 'gatsby-image'
 
 const IndexPage = ({ data }) => {
     const profile_image = data.allGhostAuthor.edges[0].node.profile_image
@@ -37,6 +38,10 @@ const IndexPage = ({ data }) => {
                 </div>
             </div>
 
+            <div className="about-elyse-banner">
+                <Img fixed={data.file.childImageSharp.fixed} className="about-elyse-image" />
+                <p className="about-elyse-text">Hi! I'm Elyse — and I know what it feels like to spend tons of time and energy on your clothes, but never feel satisfied. When I finally understood my style and quit impulse shopping—life changing. I love my wardrobe now, but most of all? It gave me my time and mental energy back. I can help you get there too.</p>
+            </div>
 
             <div className="worksheets">
                 <h3 className="worksheets-title">resources & worksheets</h3>
@@ -53,7 +58,14 @@ const IndexPage = ({ data }) => {
                     ))}
                 </section>
             </div>
+
+
+            <div className="statement">
+                <p>investing in your personal style is transforming your relationship to your clothes and your body. thinking critically. opting out of diet culture. taking care of your nice things. practicing sustainable and intentional consumption. choosing joy. uncovering the style that is singularly yours. respecting your financial goals. loving yourself. raising your feminist consciousness. letting it be easy. wearing your values on the outside. feeling amazing every day in your clothes. are you ready?</p>
+            </div>
+
         </Layout>
+
     )
 };
 
@@ -90,6 +102,13 @@ const IndexQuery = props => (
                         title
                         plaintext
                       }
+                    }
+                }
+                file(relativePath: {eq: "elyse-shape.png"}) {
+                    childImageSharp {
+                        fixed(width: 250, height: 250) {
+                            ...GatsbyImageSharpFixed
+                        }
                     }
                 }
             }

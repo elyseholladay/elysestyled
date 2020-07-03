@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 import { Navigation, Home } from '.'
 import config from '../../utils/siteConfig'
@@ -85,13 +84,6 @@ const DefaultLayoutSettingsQuery = props => (
                     edges {
                         node {
                             ...GhostSettingsFields
-                        }
-                    }
-                }
-                file(relativePath: {eq: "ghost-icon.png"}) {
-                    childImageSharp {
-                        fixed(width: 30, height: 30) {
-                            ...GatsbyImageSharpFixed
                         }
                     }
                 }
