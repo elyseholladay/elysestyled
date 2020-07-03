@@ -24,28 +24,48 @@ h6 {
     margin-top: 0;
     line-height: 1.15;
     font-weight: var(--font-normal);
-    font-family: var(--font-serif);
+    font-family: var(--font-sans-serif);
     color: var(--color-navy);
     text-rendering: optimizeLegibility;
 }
 
-/* page, post content h1s */
+/* all post content h1s incl .post-title */
 h1 {
     margin: 0 0 0.5em 0;
     font-weight: 700;
     font-size: 2.3em;
 }
 
+/* page content h1s */
+h1.content-title {
+    font-size: 1em;
+    color: var(--color-marigold);
+    text-transform: uppercase;
+}
+
 h2 {
     margin: 0.5em 0;
     color: var(--color-navy);
-    font-weight: var(--font-bold);
-    font-style: italic;
+    font-weight: var(--font-medium);
     font-size: 1.33em;
 }
 
+/* page second header + homepage highlight — don't use h2s in text! */
+.content-page h2:first-of-type,
+.highlight-text {
+    margin-bottom: 2vh;
+    color: var(--color-navy);
+    font-family: var(--font-serif);
+    font-weight: var(--font-normal);
+    font-style: italic;
+    font-size: 2em;
+    line-height: 1.2;
+    white-space: break-spaces; /* for slightly better phone size lines */
+}
+
 h3 {
-    margin: 0.5em 0;
+    font-family: var(--font-serif);
+    margin: 1.75em 0 0.5em 0;
     font-size: 1.33em;
 }
 

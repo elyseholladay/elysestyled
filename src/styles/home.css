@@ -11,12 +11,6 @@
     }
 }
 
-.home-intro-text {
-    margin-bottom: 2vh;
-    color: var(--color-navy);
-    font-family: var(--font-serif);
-    font-weight: var(--font-normal);
-    font-style: italic;
-    font-size: 2em;
-    line-height: 1.2;
+.home h2 {
+    font-weight: var(--font-bold);
 }

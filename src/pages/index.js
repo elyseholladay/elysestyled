@@ -11,21 +11,21 @@ const IndexPage = ({ data }) => {
     return (
         <Layout>
             <div className="home">
-                <div className="home-intro-text">
+                <div className="highlight-text">
                     are you ready to turn your wardrobe dreams into actions, commit to a more socially responsible wardrobe, & uncover your singular style?
                 </div>
-            </div>
+        
+                <div>
+                    <h2>group class</h2>
+                    <p>Committed to a more socially responsible wardrobe, but don’t know how to begin turning your values into actions, shopping habits, and stick to it?</p>
+                    <p>Get in the Class!</p>
+                </div>
 
-            <div>
-                <h2>group class</h2>
-                <p>Committed to a more socially responsible wardrobe, but don’t know how to begin turning your values into actions, shopping habits, and stick to it?</p>
-                <p>Get in the Class!</p>
-            </div>
-
-            <div>
-                <h2>style coaching</h2>
-                <p>Style Coaching provides the one-on-one attention and insights you need to transform your relationship to your wardrobe. Six month packages for personalized work, or if you don’t know where to begin and you’re overwhelmed and need immediate wardrobe support, sign up for a one-hour pay-what-you’re-able strategy call.</p>
-                <p>Book a Discovery Call today to see what style coaching is all about.</p>
+                <div>
+                    <h2>style coaching</h2>
+                    <p>Style Coaching provides the one-on-one attention and insights you need to transform your relationship to your wardrobe. Six month packages for personalized work, or if you don’t know where to begin and you’re overwhelmed and need immediate wardrobe support, sign up for a one-hour pay-what-you’re-able strategy call.</p>
+                    <p>Book a Discovery Call today to see what style coaching is all about.</p>
+                </div>
             </div>
 
             <div className="home-featured-blogs">

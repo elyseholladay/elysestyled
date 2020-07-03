@@ -69,6 +69,10 @@
         white-space: nowrap;
         -ms-overflow-scrolling: touch;
     }
+
+    .site-nav-item {
+        margin-right: 2em;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 800px) {

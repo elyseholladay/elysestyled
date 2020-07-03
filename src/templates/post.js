@@ -33,38 +33,36 @@ const Post = ({ data, location }) => {
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet>
             <Layout>
-                <div className="container">
-                    <article className="content post">
-                        <div className="post-header">
-                            <div className="post-meta">
-                                <div className="post-date-time">
-                                    {date} ·  {readingTime}
-                                </div>
-                                {post.tags && <div className="post-tags">
-                                    <Tags post={post} visibility="public" autolink={false}/>
-                                </div>}
+                <article className="content post">
+                    <div className="post-header">
+                        <div className="post-meta">
+                            <div className="post-date-time">
+                                {date} ·  {readingTime}
                             </div>
-
-                            <h1 className="post-title content-title">{post.title}</h1>
-                            
-                            <p className="post-excerpt">{post.excerpt}</p>
-
+                            {/* {post.tags && <div className="post-tags">
+                                <Tags post={post} visibility="public" autolink={false}/>
+                            </div>} */}
                         </div>
 
-                        { post.feature_image ?
-                            <figure className="post-feature-image">
-                                <img src={ post.feature_image } alt={ post.title } />
-                            </figure> : null }
+                        <h1 className="post-title">{post.title}</h1>
+                        
+                        {/* <p className="post-excerpt">{post.excerpt}</p> */}
 
-                        <section className="post-full-content">
-                            {/* The main post content */ }
-                            <section
-                                className="content-body load-external-scripts"
-                                dangerouslySetInnerHTML={{ __html: post.html }}
-                            />
-                        </section>
-                    </article>
-                </div>
+                    </div>
+
+                    { post.feature_image ?
+                        <figure className="post-feature-image">
+                            <img src={ post.feature_image } alt={ post.title } />
+                        </figure> : null }
+
+                    <section className="post-full-content">
+                        {/* The main post content */ }
+                        <section
+                            className="content-body load-external-scripts"
+                            dangerouslySetInnerHTML={{ __html: post.html }}
+                        />
+                    </section>
+                </article>
             </Layout>
         </>
     )
