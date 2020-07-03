@@ -81,17 +81,36 @@ img {
     width: 82vw;
     max-width: 1200px;
     margin: 0 0 0 6vw;
-    /* outline: 1px solid var(--color-vanilla); */
 }
 
 .content {
     margin-top: 2em;
 }
 
-/* text max-width for optimal ~65 character reading */
-.content-body {
+@media (min-width: 800px) {
+    .post-full-content {
+        max-width: 88%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .post-full-content {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .post-full-content {
+        max-width: 60%;
+    }
+}
+
+.content-page {
+    margin-bottom: 6vw;
+}
+
+.content-page .content-body {
     max-width: 80%;
-    outline: 1px solid red;
 }
 
 /* 404 */

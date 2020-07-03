@@ -8,19 +8,6 @@
     margin-bottom: 6em;
 }
 
-/* POST CONTENT */
-
-.post-full-content a {
-    text-decoration: none;
-    box-shadow: inset 0 -.65em 0 0 var(--color-marigold-light);
-    transition: box-shadow 250ms ease-in;
-}
-
-.post-full-content a:hover {
-    color: unset;
-    box-shadow: inset 0 -.65em 0 0 var(--color-marigold-mid);
-}
-
 /* POST HEADER */
 .post-header {
     border-bottom: 2px solid var(--color-vanilla);
@@ -33,7 +20,7 @@
     text-transform: uppercase;
     margin-bottom: 1em;
     color: var(--color-greige);
-    font-size: .75em;
+    font-size: .65em;
 }
 
 /* only post titles, not other h1s */

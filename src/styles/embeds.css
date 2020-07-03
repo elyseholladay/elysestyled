@@ -3,7 +3,7 @@
 @import 'bookmarks.css';
 
 .kg-card {
-    margin: 4em 0;
+    margin: 2em 0 3em;
 }
 
 /* IMAGES */
@@ -27,12 +27,9 @@
 }
 
 
-/* regular images only */
+/* wide and full images */
 
-.kg-image-card:not(.kg-width-wide):not(.kg-width-full) .kg-image {
-    max-width: 60%;
-}
-
+.kg-width-full .kg-image,
 .kg-width-wide .kg-image {
     width: 100%;
 }
@@ -41,11 +38,6 @@
     .kg-width-wide .kg-image {
         max-width: 1240px;
     }
-}
-
-.kg-width-full .kg-image {
-    width: 100vw;
-    max-width: unset;
 }
 
 
@@ -97,4 +89,21 @@
 
 .kg-embed-card .fluid-width-video-wrapper {
     margin: 0;
+}
+
+/* CONVERTKIT OVERRIDE STYLES */
+.formkit-form {
+    margin-top: 4em;
+    border: none !important;
+}
+
+.formkit-form [data-style="minimal"] {
+    padding: 0 !important;
+}
+
+.formkit-form .formkit-header,
+.formkit-form .formkit-subheader,
+.formkit-form .formkit-guarantee,
+.formkit-form .formkit-powered-by {
+    text-align: left !important;
 }

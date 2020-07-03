@@ -101,7 +101,7 @@ blockquote {
 a {
     text-decoration: underline;
     text-decoration-skip-ink: auto;
-    color: var(--color-offblack);
+    color: var(--color-navy);
     text-decoration-color: var(--color-agave);
     transition: color 250ms ease-in, text-decoration-color 250ms ease-in;
 }
