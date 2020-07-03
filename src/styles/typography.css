@@ -24,34 +24,29 @@ h6 {
     margin-top: 0;
     line-height: 1.15;
     font-weight: var(--font-normal);
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-serif);
     color: var(--color-navy);
     text-rendering: optimizeLegibility;
 }
 
-/* all post content h1s incl .post-title */
+/* h1s — page titles, */
 h1 {
     margin: 0 0 0.5em 0;
-    font-weight: 700;
-    font-size: 2.3em;
-}
-
-/* page content h1s */
-h1.content-title {
-    font-size: 1em;
+    font-size: .85em;
     color: var(--color-marigold);
     text-transform: uppercase;
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
 }
 
 h2 {
     margin: 0.5em 0;
     color: var(--color-navy);
-    font-weight: var(--font-medium);
     font-size: 1.33em;
 }
 
 /* page second header + homepage highlight — don't use h2s in text! */
-.content-page h2:first-of-type,
+/* .content-page h2:first-of-type,
 .highlight-text {
     margin-bottom: 2vh;
     color: var(--color-navy);
@@ -60,33 +55,34 @@ h2 {
     font-style: italic;
     font-size: 2em;
     line-height: 1.2;
-    white-space: break-spaces; /* for slightly better phone size lines */
-}
+    white-space: break-spaces;
+} */
 
 h3 {
-    font-family: var(--font-serif);
     margin: 1.75em 0 0.5em 0;
-    font-size: 1.33em;
-}
-
-h4 {
-    margin: 1.5em 0 .75em 0;
-    font-size: 1.33em;
+    font-size: 1.1em;
     font-weight: var(--font-bold);
+    font-style: italic;
+    color: var(--color-offblack);
 }
 
-h5 {
-    margin: 1.5em 0 .75em 0;
+h4, h5 {
+    margin: 1.5em 0 .5em 0;
     font-size: 1em;
-    font-weight: var(--font-bold);
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
 }
 
 h6 {
-    margin: 1.5em 0 0.5em 0;
-    font-size: 1em;
+    margin: 1.5em 0 .5em 0;
+    font-size: .88em;
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
+    color: var(--color-greige);
 }
 
-.call-to-action {
+
+/* .call-to-action {
     display: inline-block;
     color: var(--color-navy);
     box-shadow: inset 0 -.8em 0 0 var(--color-agave-light);
@@ -95,11 +91,11 @@ h6 {
     font-weight: var(--font-bold);
     font-style: italic;
     font-size: 0.8em;
-}
+} */
 
 strong {}
 
-.link-highlight {
+/* .link-highlight {
     display: inline;
     color: var(--color-navy);
     font-family: var(--font-serif);
@@ -116,9 +112,9 @@ strong {}
 .about .link-highlight:hover {
     color: var(--color-agave);
     text-decoration-color: var(--color-agave-light);
-}
+} */
 
-blockquote {
+/* blockquote {
     margin: 1em 0;
     line-height: 1.4;
     font-size: 1.2em;
@@ -126,7 +122,7 @@ blockquote {
     font-style: italic;
     font-family: var(--font-serif);
     color: var(--color-rose);
-}
+} */
 
 a {
     text-decoration: underline;

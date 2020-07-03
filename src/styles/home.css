@@ -110,7 +110,7 @@
 .statement {
     background: var(--color-marigold);
     color: var(--color-white);
-    font-family: var(--font-serif);
+    /* font-family: var(--font-serif); */
     font-weight: var(--font-bold);
     font-style: italic;
     font-size: 1.5em;

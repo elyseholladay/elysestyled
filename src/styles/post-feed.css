@@ -31,12 +31,12 @@
 }
 
 .post-card-title {
-    font-size: 2.3em;
-    font-style: italic;
-    margin: 0 0 .5em 0;
-    transition: color 250ms ease-in;
+    /* font-size: 2.3em; */
+    /* font-style: italic; */
+    /* margin: 0 0 .5em 0; */
+    /* transition: color 250ms ease-in; */
 }
 
 .post-card-main:hover .post-card-title {
-    color: var(--color-marigold);
+    /* color: var(--color-marigold); */
 }

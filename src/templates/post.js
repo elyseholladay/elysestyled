@@ -40,7 +40,7 @@ const Post = ({ data, location }) => {
                                 {date} · {readingTime}
                             </div>
                         </div>
-                        <h1 className="post-title">{post.title}</h1>
+                        <h2 className="post-title">{post.title}</h2>
                     </div>
 
                     { post.feature_image ?

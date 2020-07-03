@@ -25,8 +25,8 @@
 
 /* only post titles, not other h1s */
 .post-title {
-    color: var(--color-marigold);
+    /* color: var(--color-marigold);
     font-style: italic;
     font-family: var(--font-serif);
-    font-weight: var(--font-normal);
+    font-weight: var(--font-normal); */
 }

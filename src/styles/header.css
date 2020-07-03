@@ -26,8 +26,7 @@
 }
 
 .site-nav-item {
-    font-family: "Founders Grotesk Text Test";
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
     text-transform: uppercase;
     color: var(--color-navy);
     font-size: 0.65em;

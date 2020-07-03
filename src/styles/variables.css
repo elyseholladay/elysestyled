@@ -28,9 +28,11 @@
     --color-rose-light: rgba(193, 110, 112, .25); /* #C16E70; */
 
     /* Fonts */
-    --font-sans-serif: "Founders Grotesk Text", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-sans-serif: "Founders Grotesk Text", "Founders Grotestk Text Test", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-serif: "Nib Trial", Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
+
+    /* Nib Semibold and Semibold Italic ONLY */
 
     /* Font Weights */
     --font-normal: 400;
