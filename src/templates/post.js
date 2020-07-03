@@ -37,17 +37,11 @@ const Post = ({ data, location }) => {
                     <div className="post-header">
                         <div className="post-meta">
                             <div className="post-date-time">
-                                {date} ·  {readingTime}
+                                {date} · {readingTime}
                             </div>
-                            {/* {post.tags && <div className="post-tags">
-                                <Tags post={post} visibility="public" autolink={false}/>
-                            </div>} */}
                         </div>
 
                         <h1 className="post-title">{post.title}</h1>
-                        
-                        {/* <p className="post-excerpt">{post.excerpt}</p> */}
-
                     </div>
 
                     { post.feature_image ?

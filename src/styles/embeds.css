@@ -12,16 +12,16 @@
     margin: 4em 0 2em 0;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .kg-image-card .kg-image {
-    align-self: start;
+    align-self: flex-start;
 }
 
 .kg-card-hascaption figcaption {
     flex: 1 1 auto;
-    align-self: start;
+    align-self: flex-start;
     font-size: .8em;
     color: var(--color-greige);
 }

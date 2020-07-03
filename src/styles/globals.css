@@ -90,7 +90,8 @@ img {
 
 /* text max-width for optimal ~65 character reading */
 .content-body {
-    /* max-width: 80%; */
+    max-width: 80%;
+    outline: 1px solid red;
 }
 
 /* 404 */

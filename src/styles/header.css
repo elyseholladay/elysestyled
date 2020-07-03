@@ -8,7 +8,7 @@
 .site-nav {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 /*  don't underline the site header link or nav links */
