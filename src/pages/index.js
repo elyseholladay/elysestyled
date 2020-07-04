@@ -159,7 +159,7 @@ const IndexQuery = (props) => (
       query GhostPostAndAuthorQuery {
         allGhostPost(
           limit: 10
-          filter: { featured: { in: true } }
+          filter: { featured: { in: true }, slug: { ne: "data-schema" } }
           sort: { order: DESC, fields: published_at }
         ) {
           edges {
