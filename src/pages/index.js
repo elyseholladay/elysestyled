@@ -149,6 +149,11 @@ IndexPage.propTypes = {
     allGhostAuthor: PropTypes.object.isRequired,
     allGhostPost: PropTypes.object.isRequired,
     allGhostPage: PropTypes.object.isRequired,
+    file: {
+      childImageSharp: {
+        fluid: PropTypes.object.isRequired,
+      },
+    },
   }).isRequired,
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
