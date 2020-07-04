@@ -11,14 +11,20 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     {
-      allGhostPost(sort: { order: ASC, fields: published_at }) {
+      allGhostPost(
+        sort: { order: ASC, fields: published_at }
+        filter: { slug: { ne: "data-schema" } }
+      ) {
         edges {
           node {
             slug
           }
         }
       }
-      allGhostTag(sort: { order: ASC, fields: name }) {
+      allGhostTag(
+        sort: { order: ASC, fields: name }
+        filter: { slug: { ne: "data-schema" } }
+      ) {
         edges {
           node {
             slug
@@ -27,7 +33,10 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      allGhostAuthor(sort: { order: ASC, fields: name }) {
+      allGhostAuthor(
+        sort: { order: ASC, fields: name }
+        filter: { slug: { ne: "data-schema-author" } }
+      ) {
         edges {
           node {
             slug
@@ -36,7 +45,10 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      allGhostPage(sort: { order: ASC, fields: published_at }) {
+      allGhostPage(
+        sort: { order: ASC, fields: published_at }
+        filter: { slug: { ne: "data-schema-author" } }
+      ) {
         edges {
           node {
             slug
