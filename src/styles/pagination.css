@@ -5,11 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4em 0 2em;
-    border-top: 2px solid var(--color-agave);
-    padding-top: 2em;
+    margin-bottom: 4em;
     justify-content: space-between;
-    font-family: var(--font-sans-serif);
     font-weight: var(--font-medium);
     font-size: .6em;
     text-transform: uppercase;

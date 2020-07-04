@@ -1,59 +1,30 @@
-/* Header
+/* HEADER AND SITE NAV
 /* ---------------------------------------------------------- */
 
 .site-head {
-    padding: 4vmin 0 .5em 0;
+    padding: 3vw 0 4.5vw 0;
 }
-
-/* only use for the entire site h1 */
-.site-head h1 {
-    font-size: 3.052em;
-}
-
-
-/* SITE MAST */
-
-.site-mast {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-@media (min-width: 500px) {
-    .site-mast {
-        align-items: center;
-        flex-direction: row;
-    }
-}
-
-/* contains the site title */
-.site-mast-left {}
-
-.site-mast-title h1 {
-    margin: 0;
-    padding: 0;
-    font-style: italic;
-    color: var(--color-navy);
-    transition: color 250ms ease-in;
-}
-
-.site-mast-title:hover h1 {
-    color: var(--color-agave);
-}
-
-/* contains the site nav */
-.site-mast-right {}
-
-/* SITE NAV */
 
 .site-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+@media (max-width: 800px) {
+    .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/*  don't underline the site header link or nav links */
+.site-nav a {
+    text-decoration: none;
 }
 
 .site-nav-item {
-    margin-right: 2em;
+    margin-right: 4em;
     white-space: nowrap; /* don't break nav item text */
 }
 
@@ -62,60 +33,18 @@
 }
 
 .site-nav-item {
-    font-family: var(--font-sans-serif);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
     text-transform: uppercase;
     color: var(--color-navy);
-    font-size: 0.6em;
-    letter-spacing: .5px;
+    font-size: 0.65em;
+    line-height: 2;
 }
 
 .site-nav-item:hover,
 .site-nav-item:focus {
+    color: var(--color-marigold);
+}
+
+.site-nav-item-home {
     color: var(--color-agave);
-}
-
-/* RESPONSIVE SITE NAV SIDE SCROLL */
-
-@media (max-width: 800px) {
-    
-    .site-mast-title {
-        padding-top: 2.5em;
-        padding-bottom: 1em;
-    }
-    .site-mast-title h1 {
-        font-size: 2.441em;
-    }
-
-    .site-nav-scroll-wrapper {
-        background: var(--color-white);
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1000;
-        padding: 0 6vw;
-    }
-
-    .site-nav {
-        position: relative;
-        z-index: 100;
-        min-height: 52px;
-        padding: 0 2vw;
-        font-size: 1.3em;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
-        -ms-overflow-scrolling: touch;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 800px) {
-    .site-nav-scroll-wrapper {
-        padding-top: .45em 0 .25em 0;
-    }
-    .site-nav {
-        font-size: 1.1em;
-    }
 }

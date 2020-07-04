@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans-serif);
     font-weight: var(--font-normal);
     color: var(--color-offblack);
     line-height: 1.6;
@@ -23,72 +23,85 @@ h5,
 h6 {
     margin-top: 0;
     line-height: 1.15;
-    font-weight: var(--font-bold);
+    font-weight: var(--font-normal);
+    font-family: var(--font-serif);
+    color: var(--color-navy);
     text-rendering: optimizeLegibility;
 }
 
-/* page, post content h1s */
+/* h1s — page titles, */
 h1 {
     margin: 0 0 0.5em 0;
-    font-weight: 700;
-    font-size: 2.441em;
-    color: var(--color-navy);
+    font-size: .85em;
+    color: var(--color-marigold);
+    text-transform: uppercase;
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
 }
 
 h2 {
-    margin: 1.5em 0 0.5em 0;
-    font-weight: var(--font-bold);
-    color: var(--color-navy);
+    margin: 0 0 0.5em 0;
+    font-size: 2em;
     font-style: italic;
-    font-size: 1.953em;
+    white-space: break-spaces;
 }
 
 h3 {
-    margin: 1.5em 0 .75em 0;
-    font-size: 1.563em;
-    color: var(--color-marigold);
-    font-weight: var(--font-bold);
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.33em;
+    font-weight: var(--font-normal);
 }
 
 h4 {
-    margin: 1.5em 0 .75em 0;
-    font-size: 1.25em;
+    margin: 1.75em 0 0.5em 0;
+    font-size: 1.1em;
     font-weight: var(--font-bold);
-    color: var(--color-storm);
+    font-style: italic;
+    color: var(--color-offblack);
 }
 
 h5 {
-    margin: 1.5em 0 .75em 0;
-    font-size: 1.25em;
-    font-weight: var(--font-bold);
-    color: var(--color-storm);
+    margin: 1.5em 0 .5em 0;
+    font-size: 1em;
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
 }
 
 h6 {
-    margin: 1.5em 0 0.5em 0;
-    font-size: 1em;
-    color: var(--color-storm);
+    margin: 1.5em 0 .5em 0;
+    font-size: .88em;
+    font-family: var(--font-sans-serif);
+    font-weight: var(--font-medium);
+    color: var(--color-greige);
 }
 
-strong {
+strong {}
+
+.link-highlight {
+    display: inline;
     color: var(--color-navy);
+    font-family: var(--font-serif);
+    font-weight: var(--font-bold);
+    font-style: italic;
+    font-size: 0.88em;
+    letter-spacing: .2px;
+    text-decoration-color: var(--color-agave);
 }
 
 blockquote {
     margin: 1em 0;
     line-height: 1.4;
     font-size: 1.2em;
-    font-weight: var(--font-bold);
-    font-style: italic;
+    color: var(--color-cactus);
     font-family: var(--font-serif);
-    color: var(--color-rose);
 }
 
 a {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
     text-decoration-skip-ink: auto;
-    color: var(--color-offblack);
-    text-decoration-color: var(--color-agave);
+    color: var(--color-navy);
+    text-decoration-color: var(--color-agave-light);
     transition: color 250ms ease-in, text-decoration-color 250ms ease-in;
 }
 
@@ -105,11 +118,6 @@ a:focus {
 a:active {
     color: var(--color-marigold);
     text-decoration-color: var(--color-marigold);
-}
-
-/*  don't underline the site header link or nav links */
-.site-mast a {
-    text-decoration: none;
 }
 
 p,
