@@ -2,27 +2,27 @@
 /* ---------------------------------------------------------- */
 
 html {
-    background: var(--color-white);
+  background: var(--color-white);
 }
 
 body {
-    margin: 0;
-    min-width: 300px; /* don't be smaller than 300px on devices, because it's impossible */
+  margin: 0;
+  min-width: 300px; /* don't be smaller than 300px on devices, because it's impossible */
 }
 
 ::selection {
-    text-shadow: none;
-    background: var(--color-rose-light);
+  text-shadow: none;
+  background: var(--color-rose-light);
 }
 
 hr {
-    display: block;
-    width: 100%;
-    padding: 0;
-    height: 10px;
-    margin: 2em 0 4em;
-    border: 0;
-    border-top: 2px solid var(--color-agave-light);
+  display: block;
+  width: 100%;
+  padding: 0;
+  height: 10px;
+  margin: 2em 0 4em;
+  border: 0;
+  border-top: 2px solid var(--color-agave-light);
 }
 
 audio,
@@ -30,39 +30,40 @@ canvas,
 iframe,
 img,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
-svg { vertical-align: top; }
+svg {
+  vertical-align: top;
+}
 
 fieldset {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 figure img {
-    margin: 0;
+  margin: 0;
 }
 
 figcaption {
-    margin: 1.0em 0 0;
+  margin: 1em 0 0;
 }
 
 img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-} 
-
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 
 .icon-a11y {
   display: inline-block; /* Fix for clickability issue in WebKit */
@@ -76,30 +77,31 @@ img {
 }
 
 /* LAYOUT */
-.viewport {}
+.viewport {
+}
 
 .container {
-    margin: 0 3vw;
+  margin: 0 3vw;
 }
 
 @media (min-width: 801px) {
-    .container.content {
-        width: 82vw;
-    }
+  .container.content {
+    width: 82vw;
+  }
 }
 
 @media (min-width: 1045px) {
-    .container.content {
-        width: 55vw;
-    }
+  .container.content {
+    width: 55vw;
+  }
 }
 
 .content-page,
 .content-post {
-    margin-bottom: 4em;
+  margin-bottom: 4em;
 }
 
 /* 404 */
 .page-404 {
-    padding: 0 0 10vw 0;
+  padding: 0 0 10vw 0;
 }

@@ -3,114 +3,111 @@
 @import 'bookmarks.css';
 
 .page-feature-image {
-    margin: 2em 0 4em;
+  margin: 2em 0 4em;
 }
 
 .kg-card {
-    margin: 3em 0 4em;
+  margin: 3em 0 4em;
 }
 
 /* IMAGES */
 
 .kg-image-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .kg-image-card .kg-image {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 .kg-card-hascaption figcaption {
-    flex: 1 1 auto;
-    align-self: flex-start;
-    font-size: .8em;
-    color: var(--color-greige);
+  flex: 1 1 auto;
+  align-self: flex-start;
+  font-size: 0.8em;
+  color: var(--color-greige);
 }
-
 
 /* wide and full images */
 
 .kg-width-full .kg-image,
 .kg-width-wide .kg-image {
-    width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
-    .kg-width-wide .kg-image {
-        max-width: 1240px;
-    }
+  .kg-width-wide .kg-image {
+    max-width: 1240px;
+  }
 }
-
 
 /* GALLERY */
 
 .kg-gallery-card {
-    margin: 2em 0 4em;
+  margin: 2em 0 4em;
 }
 
 .kg-gallery-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .kg-gallery-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .kg-gallery-image img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
 }
 
 .kg-gallery-row:not(:first-of-type) {
-    margin: 0.75em 0 0 0;
+  margin: 0.75em 0 0 0;
 }
 
 .kg-gallery-image:not(:first-of-type) {
-    margin: 0 0 0 0.75em;
+  margin: 0 0 0 0.75em;
 }
 
-.kg-gallery-card+.kg-image-card.kg-width-wide,
-.kg-gallery-card+.kg-gallery-card,
-.kg-image-card.kg-width-wide+.kg-gallery-card,
-.kg-image-card.kg-width-wide+.kg-image-card.kg-width-wide {
-    margin: -2.25em 0 3em;
+.kg-gallery-card + .kg-image-card.kg-width-wide,
+.kg-gallery-card + .kg-gallery-card,
+.kg-image-card.kg-width-wide + .kg-gallery-card,
+.kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
+  margin: -2.25em 0 3em;
 }
-
 
 /* VIDEO AND INSTAGRAM EMBED CARDS */
 
 .kg-embed-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .kg-embed-card .fluid-width-video-wrapper {
-    margin: 0;
+  margin: 0;
 }
 
 /* CONVERTKIT OVERRIDE STYLES */
 .formkit-form {
-    margin-top: 4em;
-    margin-bottom: 4em;
-    border: none !important;
-    box-shadow: none !important;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.formkit-form [data-style="minimal"] {
-    padding: 0 !important;
+.formkit-form [data-style='minimal'] {
+  padding: 0 !important;
 }
 
 .formkit-form .formkit-header,
 .formkit-form .formkit-subheader,
 .formkit-form .formkit-guarantee,
 .formkit-form .formkit-powered-by {
-    text-align: left !important;
+  text-align: left !important;
 }

@@ -1,20 +1,21 @@
 /* POST */
 
 .post {
-    margin-bottom: 6vw;
+  margin-bottom: 6vw;
 }
 
 .post-feature-image {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
-.post-header {}
+.post-header {
+}
 
 .post-meta {
-    font-family: var(--font-sans-serif);
-    font-weight: var(--font-medium);
-    text-transform: uppercase;
-    margin-bottom: 1em;
-    color: var(--color-agave);
-    font-size: .6em;
+  font-family: var(--font-sans-serif);
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: var(--color-agave);
+  font-size: 0.6em;
 }
