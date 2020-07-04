@@ -20,6 +20,7 @@ hr {
     width: 100%;
     padding: 0;
     height: 10px;
+    margin: 2em 0 4em;
     border: 0;
     border-top: 2px solid var(--color-agave-light);
 }
@@ -91,6 +92,11 @@ img {
     .container.content {
         width: 55vw;
     }
+}
+
+.content-page,
+.content-post {
+    margin-bottom: 4em;
 }
 
 /* 404 */
