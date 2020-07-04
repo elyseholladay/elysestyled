@@ -33,6 +33,7 @@ button,
     font-weight: var(--font-medium);
     letter-spacing: .5px;
     text-decoration: none;
+    box-shadow: none !important;
 }
 
 button:hover,
