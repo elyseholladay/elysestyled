@@ -12,6 +12,7 @@ module.exports = {
     'plugin:ghost/node',
     'plugin:ghost/ember',
     'plugin:react/recommended',
+    'plugin:prettier/recommended',
   ],
   settings: {
     react: {
@@ -37,7 +38,6 @@ module.exports = {
       { requireReturnForObjectLiteral: true },
     ],
     'jsx-quotes': ['error', 'prefer-double'],
-    semi: ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
     'comma-dangle': [
       'error',

@@ -30,7 +30,9 @@
   "devDependencies": {
     "babel-eslint": "10.0.3",
     "eslint": "6.6.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-ghost": "0.6.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "7.16.0",
     "prettier": "^2.0.5"
   },
