@@ -48,7 +48,7 @@
   color: #1a1a1a;
 }
 .kg-bookmark-publisher:before {
-  content: "•";
+  content: '•';
   padding: 0 5px;
 }
 .kg-bookmark-thumbnail {

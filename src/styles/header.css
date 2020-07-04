@@ -2,49 +2,49 @@
 /* ---------------------------------------------------------- */
 
 .site-head {
-    padding: 3vw 0 4.5vw 0;
+  padding: 3vw 0 4.5vw 0;
 }
 
 .site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 @media (max-width: 800px) {
-    .site-nav {
-        align-items: flex-start;
-        flex-direction: column;
-    }
+  .site-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 /*  don't underline the site header link or nav links */
 .site-nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .site-nav-item {
-    margin-right: 4em;
-    white-space: nowrap; /* don't break nav item text */
+  margin-right: 4em;
+  white-space: nowrap; /* don't break nav item text */
 }
 
 .site-nav-item:last-of-type {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .site-nav-item {
-    font-weight: var(--font-bold);
-    text-transform: uppercase;
-    color: var(--color-navy);
-    font-size: 0.65em;
-    line-height: 2;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  color: var(--color-navy);
+  font-size: 0.65em;
+  line-height: 2;
 }
 
 .site-nav-item:hover,
 .site-nav-item:focus {
-    color: var(--color-marigold);
+  color: var(--color-marigold);
 }
 
 .site-nav-item-home {
-    color: var(--color-agave);
+  color: var(--color-agave);
 }

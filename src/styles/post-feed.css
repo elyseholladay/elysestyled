@@ -1,36 +1,39 @@
 /* HOMEPAGE POST FEED
 /* ---------------------------------------------------------- */
 
-
 /* POST CARD */
 .post-card {
-    margin-bottom: 4em;
-    padding-bottom: 4em;
-    border-bottom: 2px solid var(--color-agave-light);
+  margin-bottom: 4em;
+  padding-bottom: 4em;
+  border-bottom: 2px solid var(--color-agave-light);
 }
 
 .post-card-header {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .post-card-tags {
-    display: none;
+  display: none;
 }
 
 .post-card-image {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 /* this element is also a link wrapper around the image and title */
 .post-card-main {
-    display: block;
+  display: block;
 }
 
-.post-card-title { color: inherit; }
+.post-card-title {
+  color: inherit;
+}
 
 .post-card-excerpt {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
-.post-card-image-wrapper { width: 80%; }
+.post-card-image-wrapper {
+  width: 80%;
+}

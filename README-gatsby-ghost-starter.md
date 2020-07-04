@@ -10,7 +10,6 @@ A starter template to build lightning fast websites with [Ghost](https://ghost.o
 
 &nbsp;
 
-
 # Installing
 
 ```bash
