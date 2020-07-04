@@ -55,6 +55,7 @@ PostCard.propTypes = {
       name: PropTypes.string.isRequired,
       profile_image: PropTypes.string,
     }).isRequired,
+    published_at_pretty: PropTypes.string.isRequired,
   }).isRequired,
 };
 
