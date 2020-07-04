@@ -11,24 +11,24 @@
  * Licenced to Elyse Holladay 
  */
 
- @font-face {
-    font-family: 'nib-semibold';
-    src: url('nib-semibold.eot');
-    src: url('nib-semibold.eot?#iefix') format('embedded-opentype'),
-         url('nib-semibold.woff2') format('woff2'),
-         url('nib-semibold.woff') format('woff'),
-         url('nib-semibold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'nib-semibold';
+  src: url('nib-semibold.eot');
+  src: url('nib-semibold.eot?#iefix') format('embedded-opentype'),
+    url('nib-semibold.woff2') format('woff2'),
+    url('nib-semibold.woff') format('woff'),
+    url('nib-semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'nib-semibold-italic';
-    src: url('nib-semibold-italic.eot');
-    src: url('nib-semibold-italic.eot?#iefix') format('embedded-opentype'),
-         url('nib-semibold-italic.woff2') format('woff2'),
-         url('nib-semibold-italic.woff') format('woff'),
-         url('nib-semibold-italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'nib-semibold-italic';
+  src: url('nib-semibold-italic.eot');
+  src: url('nib-semibold-italic.eot?#iefix') format('embedded-opentype'),
+    url('nib-semibold-italic.woff2') format('woff2'),
+    url('nib-semibold-italic.woff') format('woff'),
+    url('nib-semibold-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

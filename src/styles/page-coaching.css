@@ -3,16 +3,17 @@
 
 /* LAYOUT!!!! omg u can just write html im ded */
 @media (min-width: 800px) {
-    .secondary-offerings {
-        display: flex;
-        justify-content: space-between;
-    }
+  .secondary-offerings {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .secondary-offerings-item {
-        flex: 0 0 45%;
-    }
+  .secondary-offerings-item {
+    flex: 0 0 45%;
+  }
 }
 
-.secondary-offerings-strategy-call {}
-.secondary-offerings-workshops {}
-
+.secondary-offerings-strategy-call {
+}
+.secondary-offerings-workshops {
+}

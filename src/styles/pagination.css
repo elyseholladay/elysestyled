@@ -2,30 +2,28 @@
 /* ---------------------------------------------------------- */
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4em;
-    justify-content: space-between;
-    font-weight: var(--font-medium);
-    font-size: .6em;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+  justify-content: space-between;
+  font-weight: var(--font-medium);
+  font-size: 0.6em;
+  text-transform: uppercase;
 }
 
 .pagination a {
-    padding: 1em; /* increase tap target size */
-    background: rgba(165, 189, 197, .125);
-    border-radius: 2px;
-    transition: background 250ms ease-in;
-    text-decoration: none;
+  padding: 1em; /* increase tap target size */
+  background: rgba(165, 189, 197, 0.125);
+  border-radius: 2px;
+  transition: background 250ms ease-in;
+  text-decoration: none;
 }
 
 .pagination a:hover {
-    background: var(--color-marigold-light);
+  background: var(--color-marigold-light);
 }
 
 .pagination-location {
-    color: var(--color-agave);
+  color: var(--color-agave);
 }
-
-

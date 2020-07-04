@@ -1,8 +1,8 @@
 # TODO
 
-* move convertkit css over to form embeds
-* figure out what's up with embedded videos and IG, use a plugin?
-* re-add instagram feed on homepage?
+- move convertkit css over to form embeds
+- figure out what's up with embedded videos and IG, use a plugin?
+- re-add instagram feed on homepage?
 
 ```
 <h1 id="heading-1">h1 page titles</h1>

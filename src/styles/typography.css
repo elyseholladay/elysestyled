@@ -2,17 +2,17 @@
 /* ---------------------------------------------------------- */
 
 html {
-    /* flexible font size between 16-20px */
-    font-size: min(max(16px, 3vw), 20px);
+  /* flexible font size between 16-20px */
+  font-size: min(max(16px, 3vw), 20px);
 }
 
 body {
-    font-family: var(--font-sans-serif);
-    font-weight: var(--font-normal);
-    color: var(--color-offblack);
-    line-height: 1.6;
-    text-rendering: optimizeLegibility;
-    -moz-font-feature-settings: "liga" on;
+  font-family: var(--font-sans-serif);
+  font-weight: var(--font-normal);
+  color: var(--color-offblack);
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: 'liga' on;
 }
 
 h1,
@@ -21,103 +21,104 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
-    line-height: 1.15;
-    font-weight: var(--font-normal);
-    font-family: var(--font-serif);
-    color: var(--color-navy);
-    text-rendering: optimizeLegibility;
+  margin-top: 0;
+  line-height: 1.15;
+  font-weight: var(--font-normal);
+  font-family: var(--font-serif);
+  color: var(--color-navy);
+  text-rendering: optimizeLegibility;
 }
 
 /* h1s — page titles, */
 h1 {
-    margin: 0 0 0.5em 0;
-    font-size: .85em;
-    color: var(--color-marigold);
-    text-transform: uppercase;
-    font-family: var(--font-sans-serif);
-    font-weight: var(--font-medium);
+  margin: 0 0 0.5em 0;
+  font-size: 0.85em;
+  color: var(--color-marigold);
+  text-transform: uppercase;
+  font-family: var(--font-sans-serif);
+  font-weight: var(--font-medium);
 }
 
 h2 {
-    margin: 0 0 0.5em 0;
-    font-size: 2em;
-    font-style: italic;
-    white-space: break-spaces;
+  margin: 0 0 0.5em 0;
+  font-size: 2em;
+  font-style: italic;
+  white-space: break-spaces;
 }
 
 h3 {
-    margin: 1.5em 0 0.5em 0;
-    font-size: 1.33em;
-    font-weight: var(--font-normal);
+  margin: 1.5em 0 0.5em 0;
+  font-size: 1.33em;
+  font-weight: var(--font-normal);
 }
 
 h4 {
-    margin: 1.75em 0 0.5em 0;
-    font-size: 1.1em;
-    font-weight: var(--font-bold);
-    font-style: italic;
-    color: var(--color-offblack);
+  margin: 1.75em 0 0.5em 0;
+  font-size: 1.1em;
+  font-weight: var(--font-bold);
+  font-style: italic;
+  color: var(--color-offblack);
 }
 
 h5 {
-    margin: 1.5em 0 .5em 0;
-    font-size: 1em;
-    font-family: var(--font-sans-serif);
-    font-weight: var(--font-medium);
+  margin: 1.5em 0 0.5em 0;
+  font-size: 1em;
+  font-family: var(--font-sans-serif);
+  font-weight: var(--font-medium);
 }
 
 h6 {
-    margin: 1.5em 0 .5em 0;
-    font-size: .88em;
-    font-family: var(--font-sans-serif);
-    font-weight: var(--font-medium);
-    color: var(--color-greige);
+  margin: 1.5em 0 0.5em 0;
+  font-size: 0.88em;
+  font-family: var(--font-sans-serif);
+  font-weight: var(--font-medium);
+  color: var(--color-greige);
 }
 
-strong {}
+strong {
+}
 
 .link-highlight {
-    display: inline;
-    color: var(--color-navy);
-    font-family: var(--font-serif);
-    font-weight: var(--font-bold);
-    font-style: italic;
-    font-size: 0.88em;
-    letter-spacing: .2px;
-    text-decoration-color: var(--color-agave);
+  display: inline;
+  color: var(--color-navy);
+  font-family: var(--font-serif);
+  font-weight: var(--font-bold);
+  font-style: italic;
+  font-size: 0.88em;
+  letter-spacing: 0.2px;
+  text-decoration-color: var(--color-agave);
 }
 
 blockquote {
-    margin: 1em 0;
-    line-height: 1.4;
-    font-size: 1.2em;
-    color: var(--color-cactus);
-    font-family: var(--font-serif);
+  margin: 1em 0;
+  line-height: 1.4;
+  font-size: 1.2em;
+  color: var(--color-cactus);
+  font-family: var(--font-serif);
 }
 
 a {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-skip-ink: auto;
-    color: var(--color-navy);
-    text-decoration-color: var(--color-agave-light);
-    transition: color 250ms ease-in, text-decoration-color 250ms ease-in;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-skip-ink: auto;
+  color: var(--color-navy);
+  text-decoration-color: var(--color-agave-light);
+  transition: color 250ms ease-in, text-decoration-color 250ms ease-in;
 }
 
 a:hover {
-    color: var(--color-marigold);
-    text-decoration-color: var(--color-marigold-light);
+  color: var(--color-marigold);
+  text-decoration-color: var(--color-marigold-light);
 }
 
 a:focus {
-    outline: 2px dotted var(--color-marigold);
-    text-decoration-color: var(--color-marigold);
+  outline: 2px dotted var(--color-marigold);
+  text-decoration-color: var(--color-marigold);
 }
 
 a:active {
-    color: var(--color-marigold);
-    text-decoration-color: var(--color-marigold);
+  color: var(--color-marigold);
+  text-decoration-color: var(--color-marigold);
 }
 
 p,
@@ -125,50 +126,50 @@ ul,
 ol,
 dl,
 blockquote {
-    margin: 0 0 1.5em 0;
+  margin: 0 0 1.5em 0;
 }
 
 ol,
 ul {
-    padding-left: 1.3em;
-    padding-right: 1.5em;
+  padding-left: 1.3em;
+  padding-right: 1.5em;
 }
 
 ol ol,
 ul ul,
 ul ol,
 ol ul {
-    margin: 0.5em 0 1em;
+  margin: 0.5em 0 1em;
 }
 
 ul {
-    list-style: disc;
+  list-style: disc;
 }
 
 ol {
-    list-style: decimal;
+  list-style: decimal;
 }
 
 ul,
 ol {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 li {
-    margin: 0.5em 0;
-    padding-left: 0.3em;
-    line-height: 1.6em;
+  margin: 0.5em 0;
+  padding-left: 0.3em;
+  line-height: 1.6em;
 }
 
 dt {
-    float: left;
-    margin: 0 20px 0 0;
-    width: 120px;
-    font-weight: 500;
-    text-align: right;
+  float: left;
+  margin: 0 20px 0 0;
+  width: 120px;
+  font-weight: 500;
+  text-align: right;
 }
 
 dd {
-    margin: 0 0 5px 0;
-    text-align: left;
+  margin: 0 0 5px 0;
+  text-align: left;
 }

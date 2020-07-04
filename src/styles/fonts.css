@@ -1,4 +1,3 @@
-
 /* ------------------------------------------------------------------------- */
 /* FONT-FACE DEFINITIONS --------------------------------------------------- */
 /* ------------------------------------------------------------------------- */
@@ -16,72 +15,71 @@
  * Licenced to Elyse Holladay 
  */
 
- @font-face {
-    font-family: 'Nib';
-    src: url('../fonts/nib/nib-semibold.eot');
-    src: url('../fonts/nib/nib-semibold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/nib/nib-semibold.woff2') format('woff2'),
-         url('../fonts/nib/nib-semibold.woff') format('woff'),
-         url('../fonts/nib/nib-semibold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'Nib';
+  src: url('../fonts/nib/nib-semibold.eot');
+  src: url('../fonts/nib/nib-semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/nib/nib-semibold.woff2') format('woff2'),
+    url('../fonts/nib/nib-semibold.woff') format('woff'),
+    url('../fonts/nib/nib-semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Nib';
-    src: url('../fonts/nib/nib-semibold-italic.eot');
-    src: url('../fonts/nib/nib-semibold-italic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/nib/nib-semibold-italic.woff2') format('woff2'),
-         url('../fonts/nib/nib-semibold-italic.woff') format('woff'),
-         url('../fonts/nib/nib-semibold-italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+  font-family: 'Nib';
+  src: url('../fonts/nib/nib-semibold-italic.eot');
+  src: url('../fonts/nib/nib-semibold-italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/nib/nib-semibold-italic.woff2') format('woff2'),
+    url('../fonts/nib/nib-semibold-italic.woff') format('woff'),
+    url('../fonts/nib/nib-semibold-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
-
-
 
 /* ------------------------------------------------------------------------- */
 /* ICOMOON ----------------------------------------------------------------- */
 /* ------------------------------------------------------------------------- */
 
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon/icomoon.eot?wz95x5');
-    src: url('../fonts/icomoon/icomoon.eot?wz95x5#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon/icomoon.ttf?wz95x5') format('truetype'),
-        url('../fonts/icomoon/icomoon.woff?wz95x5') format('woff'),
-        url('../fonts/icomoon/icomoon.svg?wz95x5#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon/icomoon.eot?wz95x5');
+  src: url('../fonts/icomoon/icomoon.eot?wz95x5#iefix')
+      format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?wz95x5') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?wz95x5') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?wz95x5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-quotes-left:before {
-    content: "\e907";
+  content: '\e907';
 }
 
 .icon-share2:before {
-    content: "\e900";
+  content: '\e900';
 }
 
 .icon-instagram:before {
-    content: "\e902";
+  content: '\e902';
 }
