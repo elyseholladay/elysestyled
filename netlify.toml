@@ -2,5 +2,9 @@
   command = "gatsby build"
   publish = "public/"
 
+  [build.environment]
+    NODE_VERSION = "12.18.2"
+    YARN_VERSION = "1.22.4"
+
 [template]
   incoming-hooks = ["Ghost"]
