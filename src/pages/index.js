@@ -73,11 +73,9 @@ const IndexPage = ({ data, location }) => {
                 values, come up with your very own style words, & plan for
                 future wardrobe satisfaction.
               </p>
-              {/* <p><a href="#" className="link-highlight">Book your Discovery Call.</a></p> */}
               <div className="form-wrapper">
                 <a
                   href="https://app.acuityscheduling.com/schedule.php?owner=17965065"
-                  target="_blank"
                   className="acuity-embed-button"
                 >
                   Schedule Appointment
