@@ -150,6 +150,9 @@ IndexPage.propTypes = {
     allGhostPost: PropTypes.object.isRequired,
     allGhostPage: PropTypes.object.isRequired,
   }).isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 const IndexQuery = (props) => (
