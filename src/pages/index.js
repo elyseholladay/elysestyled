@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ConvertKitForm from 'convertkit-react';
-import { Link, StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import { Layout, WorksheetsPosts } from '../components/common';
 import { MetaData } from '../components/common/meta';
 import Img from 'gatsby-image';
 
 const IndexPage = ({ data, location }) => {
-  const profile_image = data.allGhostAuthor.edges[0].node.profile_image;
   const posts = data.allGhostPost.edges;
 
   return (
@@ -67,12 +66,12 @@ const IndexPage = ({ data, location }) => {
               </h3>
               <p>
                 Style Coaching is a six-month, completely custom, wardrobe
-                reset. We'll dig deep into your wardrobe dreams, using your real
-                habits to understand what you already wear and how you shop, and
-                creatively explore where you want to be in the future. Using
-                journaling prompts and exercises, you’ll reflect on your values,
-                come up with your very own style words, & plan for future
-                wardrobe satisfaction.
+                reset. We&apos;ll dig deep into your wardrobe dreams, using your
+                real habits to understand what you already wear and how you
+                shop, and creatively explore where you want to be in the future.
+                Using journaling prompts and exercises, you’ll reflect on your
+                values, come up with your very own style words, & plan for
+                future wardrobe satisfaction.
               </p>
               {/* <p><a href="#" className="link-highlight">Book your Discovery Call.</a></p> */}
               <div className="form-wrapper">
@@ -94,10 +93,10 @@ const IndexPage = ({ data, location }) => {
 
         <div className="about">
           <div className="about-text container content">
-            👋🏼 I'm Elyse—your personal style coach. I believe in wearing your
-            values, thinking critically, and modeling the world you want to live
-            in. For me, it's about the clothes—but it's not just about the
-            clothes.&nbsp;
+            👋🏼 I&apos;m Elyse—your personal style coach. I believe in wearing
+            your values, thinking critically, and modeling the world you want to
+            live in. For me, it&apos;s about the clothes—but it&apos;s not just
+            about the clothes.&nbsp;
             <a href="/about" className="link-highlight">
               Read more about me and why I started style coaching.
             </a>

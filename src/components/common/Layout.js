@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Link, StaticQuery, graphql } from 'gatsby';
 
-import { Navigation, Home } from '.';
-import config from '../../utils/siteConfig';
+import { Navigation } from '.';
 
 // Styles
 import '../../styles/app.css';
@@ -19,13 +18,6 @@ import '../../styles/app.css';
  */
 const DefaultLayout = ({ data, children }) => {
   const site = data.allGhostSettings.edges[0].node;
-
-  const twitterUrl = site.twitter
-    ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}`
-    : null;
-  const facebookUrl = site.facebook
-    ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}`
-    : null;
 
   return (
     <>

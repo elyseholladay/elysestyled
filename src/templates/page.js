@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
@@ -14,7 +14,6 @@ import { MetaData } from '../components/common/meta';
  */
 const Page = ({ data, location }) => {
   const page = data.ghostPage;
-  const pageClass = `page-${page.slug}`;
 
   useGalleryResize(page.html);
 

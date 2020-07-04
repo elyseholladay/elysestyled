@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import { Tags } from '@tryghost/helpers-gatsby';
 
 const WorksheetsPosts = ({ post }) => {
   const url = `/blog/${post.slug}/`;
