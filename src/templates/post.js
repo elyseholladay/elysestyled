@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import { Tags } from '@tryghost/helpers-gatsby';
 import { readingTime as readingTimeHelper } from '@tryghost/helpers';
 
 import { Layout, useGalleryResize } from '../components/common';
@@ -17,7 +16,6 @@ import { MetaData } from '../components/common/meta';
 const Post = ({ data, location }) => {
   const post = data.ghostPost;
   const date = `${post.published_at_pretty}`;
-  const url = `/${post.slug}/`;
   const readingTime = readingTimeHelper(post);
 
   useGalleryResize(post.html);
