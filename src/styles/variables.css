@@ -4,37 +4,39 @@
 /* ---------------------------------------------------------- */
 
 :root {
+  /* Colors */
+  --color-offwhite: #f2f2f2;
+  --color-white: #ffffff;
 
-    /* Colors */
-    --color-offwhite: #f2f2f2;
-    --color-white: #ffffff;
+  --color-greige: rgba(138, 128, 124, 1); /* #8A807C; */
+  --color-vanilla: rgba(238, 227, 220, 1); /* #EEE3DC */
 
-    --color-greige: rgba(138, 128, 124, 1); /* #8A807C; */
-    --color-vanilla: rgba(238, 227, 220, 1); /* #EEE3DC */
+  --color-offblack: rgba(35, 49, 53, 1); /* #233135; */
+  --color-navy: rgba(22, 67, 83, 1); /* #164353; */
 
-    --color-offblack: rgba(35, 49, 53, 1); /* #233135; */
-    --color-navy: rgba(22, 67, 83, 1); /* #164353; */
+  --color-agave: rgba(165, 189, 197, 1); /*#A5BDC5;  */
+  --color-agave-light: rgba(165, 189, 197, 0.25);
 
-    --color-agave: rgba(165, 189, 197, 1); /*#A5BDC5;  */
-    --color-agave-light: rgba(165, 189, 197, .25);
+  --color-cactus: rgba(115, 137, 95, 1); /* #73895F */
 
-    --color-cactus: rgba(115, 137, 95, 1); /* #73895F */
+  --color-marigold: rgba(235, 168, 50, 1); /* #EBA832; */
+  --color-marigold-mid: rgba(235, 168, 50, 0.65);
+  --color-marigold-light: rgba(235, 168, 50, 0.25);
 
-    --color-marigold: rgba(235, 168, 50, 1); /* #EBA832; */
-    --color-marigold-mid: rgba(235, 168, 50, .65);
-    --color-marigold-light: rgba(235, 168, 50, .25);
+  --color-rose: rgba(193, 110, 112, 1); /* #C16E70; */
+  --color-rose-light: rgba(193, 110, 112, 0.25); /* #C16E70; */
 
-    --color-rose: rgba(193, 110, 112, 1); /* #C16E70; */
-    --color-rose-light: rgba(193, 110, 112, .25); /* #C16E70; */
+  /* Fonts */
+  --font-sans-serif: 'Founders Grotesk Text', 'Work Sans', 'Graphik',
+    'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-serif: 'Nib', 'Bitter', 'Noto Serif', 'Canela', 'Domaine', Georgia,
+    Times, serif;
+  --font-mono: 'Fira Mono', 'Roboto Mono', Menlo, Courier, monospace;
 
-    /* Fonts */
-    --font-sans-serif: "Founders Grotesk Text", "Work Sans", "Graphik", "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: "Nib", "Bitter", "Noto Serif", "Canela", "Domaine", Georgia, Times, serif;
-    --font-mono: "Fira Mono", "Roboto Mono", Menlo, Courier, monospace;
-
-    /* Font Weights */
-    --font-normal: 400;
-    --font-medium: 600;
-    --font-bold: 700;
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 600;
+  --font-bold: 700;
 }
-
