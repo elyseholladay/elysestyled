@@ -27,7 +27,8 @@
     "babel-eslint": "10.0.3",
     "eslint": "6.6.0",
     "eslint-plugin-ghost": "0.6.0",
-    "eslint-plugin-react": "7.16.0"
+    "eslint-plugin-react": "7.16.0",
+    "prettier": "^2.0.5"
   },
   "dependencies": {
     "@tryghost/helpers": "1.1.19",
