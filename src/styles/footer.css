@@ -8,7 +8,18 @@
 
 .footer-nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 500px) {
+  .footer-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.footer-nav {
   font-size: 0.6em;
   font-weight: var(--font-medium);
   text-transform: uppercase;
@@ -29,4 +40,8 @@
 .copyright {
   font-weight: var(--font-normal);
   color: var(--color-agave-light);
+}
+
+.copyright {
+  margin: 0;
 }
