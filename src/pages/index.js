@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ConvertKitForm from 'convertkit-react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import { Layout, WorksheetsPosts } from '../components/common';
 import { MetaData } from '../components/common/meta';
 import Img from 'gatsby-image';
@@ -45,18 +45,22 @@ const IndexPage = ({ data, location }) => {
           <div className="offerings content container">
             <div className="offerings-group">
               <h3>
-                <a href="/course">Socially Responsible Style Course</a>
+                <Link to="/unfolding">Unfolding: A Four Week Group Course</Link>
               </h3>
               <p>
-                Committed to a more socially responsible wardrobe, but don’t
-                know how to begin changing your shopping habits? This one-day
-                online group course is designed specifically to help you name
-                your shopping values and create a thoughtful wishlist system
-                that really works... with friends! Want to be first to know when
-                signups open?
+                Collaborative group sessions. Worksheets, templates, and
+                discussion. 20 spots only. Unfolding is designed to help you
+                make value-driven style decisions, without relying on willpower.{' '}
+                <Link to="/unfolding">Find out more.</Link>&nbsp; Registration
+                opens Tuesday July 14th—or get on the email list to sign up 24
+                hours early.
               </p>
               <div className="form-wrapper">
-                <ConvertKitForm formId={1489882} template="minimal" />
+                <ConvertKitForm
+                  formId={1489882}
+                  template="minimal"
+                  submitText="Count Me In"
+                />
               </div>
             </div>
 
