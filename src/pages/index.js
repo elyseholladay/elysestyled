@@ -48,12 +48,12 @@ const IndexPage = ({ data, location }) => {
                 <Link to="/unfolding">Unfolding: A Four Week Group Course</Link>
               </h3>
               <p>
-                Collaborative group sessions. Worksheets, templates, and
-                discussion. 20 spots only. Unfolding is designed to help you
-                make value-driven style decisions, without relying on willpower.{' '}
+                Unfolding is a four-week online workshop and discussion circle
+                designed to help you make value-driven style decisions without
+                relying on willpower.&nbsp;
                 <Link to="/unfolding">Find out more.</Link>&nbsp; Registration
-                opens Tuesday July 14th—or get on the email list to sign up 24
-                hours early.
+                opens Tuesday July 14th—or get on the email list to sign up
+                early.
               </p>
               <div className="form-wrapper">
                 <ConvertKitForm
