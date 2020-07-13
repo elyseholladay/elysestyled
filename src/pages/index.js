@@ -52,8 +52,7 @@ const IndexPage = ({ data, location }) => {
                 designed to help you make value-driven style decisions without
                 relying on willpower.&nbsp;
                 <Link to="/unfolding">Find out more.</Link>&nbsp; Registration
-                opens Tuesday July 14th—or get on the email list to sign up
-                early.
+                opens Tuesday July 14th.
               </p>
               <div className="form-wrapper">
                 <ConvertKitForm
