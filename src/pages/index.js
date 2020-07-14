@@ -51,15 +51,26 @@ const IndexPage = ({ data, location }) => {
                 Unfolding is a four-week online workshop and discussion circle
                 designed to help you make value-driven style decisions without
                 relying on willpower.&nbsp;
-                <Link to="/unfolding">Find out more.</Link>&nbsp; Registration
-                opens Tuesday July 14th.
+                <Link to="/unfolding">
+                  See how it works and what we'll do together.
+                </Link>
               </p>
               <div className="form-wrapper">
-                <ConvertKitForm
-                  formId={1489882}
-                  template="minimal"
-                  submitText="Count Me In"
+                <a
+                  href="https://app.acuityscheduling.com/schedule.php?owner=17965065&owner=17965065&appointmentType=15310837"
+                  class="acuity-embed-button"
+                >
+                  Register Now for Unfolding
+                </a>
+                <link
+                  rel="stylesheet"
+                  href="https://embed.acuityscheduling.com/embed/button/17965065.css"
+                  id="acuity-button-styles"
                 />
+                <script
+                  src="https://embed.acuityscheduling.com/embed/button/17965065.js"
+                  async
+                ></script>
               </div>
             </div>
 
@@ -74,14 +85,19 @@ const IndexPage = ({ data, location }) => {
                 shop, and creatively explore where you want to be in the future.
                 Using journaling prompts and exercises, you’ll reflect on your
                 values, come up with your very own style words, & plan for
-                future wardrobe satisfaction.
+                future wardrobe satisfaction.{' '}
+                <a href="/style-coaching">Find out more</a> or{' '}
+                <a href="https://app.acuityscheduling.com/schedule.php?owner=17965065">
+                  book a free Discovery Call
+                </a>
+                .
               </p>
               <div className="form-wrapper">
                 <a
                   href="https://app.acuityscheduling.com/schedule.php?owner=17965065"
                   className="acuity-embed-button"
                 >
-                  Schedule Appointment
+                  Book a Discovery Call
                 </a>
                 <script
                   src="https://embed.acuityscheduling.com/embed/button/17965065.js"
