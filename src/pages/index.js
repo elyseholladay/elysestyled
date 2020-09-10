@@ -35,9 +35,8 @@ const IndexPage = ({ data, location }) => {
 
             <div className="container highlight-text">
               <h2>
-                are you ready to turn your wardrobe dreams into actions, commit
-                to a more socially responsible wardrobe, & uncover your singular
-                style?
+                are you ready to transform your relationship with clothes and
+                uncover your singular style?
               </h2>
             </div>
           </div>
@@ -50,14 +49,15 @@ const IndexPage = ({ data, location }) => {
               <p>
                 Unfolding is a four-week online workshop and discussion circle
                 designed to help you make value-driven style decisions without
-                relying on willpower.&nbsp;
+                relying on willpower.&nbsp; Limited to 6 spots. Saturdays
+                October 3, 10, 17, and 24.&nbsp;
                 <Link to="/unfolding">
-                  See how it works and what we'll do together.
+                  See how it works and sign up for October now.
                 </Link>
               </p>
               <div className="form-wrapper">
                 <a
-                  href="https://app.acuityscheduling.com/schedule.php?owner=17965065&owner=17965065&appointmentType=15310837"
+                  href="https://app.acuityscheduling.com/schedule.php?owner=17965065&owner=17965065&appointmentType=16612097"
                   class="acuity-embed-button"
                 >
                   Register Now for Unfolding
