@@ -35,62 +35,25 @@ const IndexPage = ({ data, location }) => {
 
             <div className="container highlight-text">
               <h2>
-                are you ready to transform your relationship with clothes and
-                uncover your singular style?
+                personal style coaching for intentional people who are ready to transform their relationship with clothes.
               </h2>
             </div>
           </div>
 
           <div className="offerings content container">
-            <div className="offerings-group">
-              <h3>
-                <Link to="/unfolding">Unfolding: A Four Week Group Course</Link>
-              </h3>
-              <p>
-                Unfolding is a four-week online workshop and discussion circle
-                designed to help you make value-driven style decisions without
-                relying on willpower.&nbsp; Limited to 6 spots. Saturdays
-                October 3, 10, 17, and 24.&nbsp;
-                <Link to="/unfolding">
-                  See how it works and sign up for October now.
-                </Link>
-              </p>
-              <div className="form-wrapper">
-                <a
-                  href="https://app.acuityscheduling.com/schedule.php?owner=17965065&owner=17965065&appointmentType=16612097"
-                  class="acuity-embed-button"
-                >
-                  Register Now for Unfolding
-                </a>
-                <link
-                  rel="stylesheet"
-                  href="https://embed.acuityscheduling.com/embed/button/17965065.css"
-                  id="acuity-button-styles"
-                />
-                <script
-                  src="https://embed.acuityscheduling.com/embed/button/17965065.js"
-                  async
-                ></script>
-              </div>
-            </div>
 
             <div className="offerings-group">
-              <h3>
-                <a href="/style-coaching">Personal Style Coaching</a>
-              </h3>
               <p>
-                Style Coaching is a six-month, completely custom, wardrobe
-                reset. We&apos;ll dig deep into your wardrobe dreams, using your
-                real habits to understand what you already wear and how you
-                shop, and creatively explore where you want to be in the future.
-                Using journaling prompts and exercises, you’ll reflect on your
-                values, come up with your very own style words, & plan for
-                future wardrobe satisfaction.{' '}
-                <a href="/style-coaching">Find out more</a> or{' '}
-                <a href="https://app.acuityscheduling.com/schedule.php?owner=17965065">
-                  book a free Discovery Call
-                </a>
-                .
+                You love style and self-expression, but never quite feel like yourself in your outfits. You're spending so much energy on your wardrobe—hours wasted agonizing over decisions—but feel like you're getting nowhere. Your life and priorities are shifting, but your clothes and shopping habits are stuck. You're dreaming of a wardrobe that finally feels right—value-aligned <em>and</em> style-aligned.
+              </p>
+              <p>
+                You're ready to transform your relationship with clothes—and today is a perfect moment to begin.
+              </p>
+              <p>
+                Personal style coaching is a thoughtful and long-term wardrobe reset. Over multiple seasons, you'll uncover your singular style, alter your style mindset, and build resilient wardrobe systems. <a href="/style-coaching">Discover how Style Coaching works</a> and <a href="/values">how our personal style intersects with our personal values</a>.
+              </p>
+              <p>
+                When you're ready to transform your relationship with your clothes, <a href="https://elysestyled.as.me/discovery">book your free Discovery Call</a>.
               </p>
               <div className="form-wrapper">
                 <a
@@ -105,15 +68,17 @@ const IndexPage = ({ data, location }) => {
                 ></script>
               </div>
             </div>
+            <div className="testimonial">
+              <blockquote>
+                "This has been so helpful already for me unlearning my guilt cycle and 'hating' my hobby and source of joy and creativity in clothes." <br/>— <a href="https://www.instagram.com/spagrettystylejournal/">Gretchen @spagrettystylejournal</a>
+              </blockquote>
+            </div>
           </div>
         </div>
 
         <div className="about">
           <div className="about-text container content">
-            👋🏼 I&apos;m Elyse—your personal style coach. I believe in wearing
-            your values, thinking critically, and modeling the world you want to
-            live in. For me, it&apos;s about the clothes—but it&apos;s not just
-            about the clothes.&nbsp;
+            👋🏼 I&apos;m Elyse, and I'm on a mission to help women & gender non-conforming people define their singular style, build wardrobe systems that support them, and make value-driven style & shopping decisions. For me, it&apos;s about the clothes—but it&apos;s not just about the clothes.&nbsp;
             <a href="/about" className="link-highlight">
               Read more about me and why I started style coaching.
             </a>
@@ -124,12 +89,9 @@ const IndexPage = ({ data, location }) => {
         </div>
 
         <div className="worksheets content container">
-          <h3 className="worksheets-title">resources & worksheets</h3>
+          <h3 className="worksheets-title">introspection—in your inbox</h3>
           <p>
-            My secret to help you get started thinking critically about your
-            wardrobe? Thoughtful prompts and guided worksheets. Get new
-            worksheets right in your inbox to stay curious, accountable, and
-            motivated to improve your relationship with your clothes.
+            Thoughtful articles, worksheets, and assessments designed to help you take action and think critically about your personal style, values, and mindset. 
           </p>
 
           <div className="form-wrapper">
